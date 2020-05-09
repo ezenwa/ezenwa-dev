@@ -60,9 +60,10 @@ $('div').append(item);
 $(document).ready(function(){
 
   $("button.navbar-toggler").click(function(){
+if ($(this).attr('data-toggle','collapse')) {
 $("body").toggleClass('no-scroll');
-$(this).find('.toggle-on').toggleClass('active');
-        $(this).find('.toggle-off').toggleClass('active');
+}
+
   });
 });
 </script>
@@ -1200,7 +1201,7 @@ $(this).find('.toggle-on').toggleClass('active');
                     inbox!</h4>
                 <div class="form1" data-form-type="formoid">
                     <!---Formbuilder Form--->
-                    <form action="https://mobirise.com/" method="POST" class="mbr-form form-with-styler px-2" data-form-title="My Mobirise Form"><input type="hidden" name="email" data-form-email="true" value="wI6SIqMQKtFGPdYxdKHtufh66lllEUdz1CZ/is9O/iipYEE9cz+uJPVxSafJd+VKTlMQ69BOZ5HHGIfqdmPkIVKtIzzytrSBzgFMHIn+DvBuy9wVzCZjF6udhLI9xNmz.0YoP9D1/yRL1V7XYkagm87v1nm563MYkm0EQSf6YmQ1HpNTm5SI1jJkZuDLzWM8gOMnAUEJ15RHqvPMqwHJR/hwwpL/89kxvqeLurfYJ9sWtdprx5vtSQq/rgo1Bd6aI">
+                    <form action="https://mobirise.com/" method="POST" class="mbr-form form-with-styler px-2" data-form-title="My Mobirise Form"><input type="hidden" name="email" data-form-email="true" value="OEPtwCsM+XjSBj7fDfldZZD8qUHcvFU9v8C0zoiBqlxZyrGXG+XFbXFDB6S0Z9mKzvnnA2+4uumem22JDEZCx1sg4+rfMhfIeoqJ7YgTNuSwQmqhaeFlcxr4owAidcK5.SMddfwpYfSIe/qdeKxZg9KROxfqjH9YXxGwxqWHyLAvIALnhCzB9yO3liyJHyhcpbmWRksWOk89i5oNwtkzHeO9PlDNMgtdh2KT3kFJkZVCsdV/WPXealpE0iJgRoSaR">
                         <div class="row">
                             <div hidden="hidden" data-form-alert="" class="alert alert-success col-12">Thanks for filling
                                 out the form!</div>
