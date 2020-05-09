@@ -44,11 +44,11 @@
     "PWA": {
       "enabled": true,
       "name": "Joshua Ezenwa",
-      "icon": "@PROJECT_PATH@/assets/images/pwa-icon.svg",
-      "themeColor": "#6227b1"
+      "icon": "@PROJECT_PATH@/assets/images/pwa-icon-512x512.png",
+      "themeColor": "#232323"
     },
     "witsec-language": "es",
-    "favicon": false,
+    "favicon": "@PROJECT_PATH@/assets/images/pwa-icon-128x128.png",
     "cssOptimize": true,
     "lazyLoad": true,
     "lazyType": "placeholder",
