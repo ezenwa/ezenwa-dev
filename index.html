@@ -66,7 +66,16 @@ $("body").removeAttr('data-toggle','collapse');
 });
 </script>
 
-
+<script type="text/javascript"> // RELOADS WEBPAGE WHEN MOBILE ORIENTATION CHANGES  
+    window.onorientationchange = function() { 
+        var orientation = window.orientation; 
+            switch(orientation) { 
+                case 0:
+                case 90:
+                case -90: window.location.reload(); 
+                break; } 
+    };
+</script>
 
 
 <meta name="theme-color" content="#333333">
@@ -1199,7 +1208,7 @@ $("body").removeAttr('data-toggle','collapse');
                     inbox!</h4>
                 <div class="form1" data-form-type="formoid">
                     <!---Formbuilder Form--->
-                    <form action="https://mobirise.com/" method="POST" class="mbr-form form-with-styler px-2" data-form-title="My Mobirise Form"><input type="hidden" name="email" data-form-email="true" value="vqo76wVla+FnirIsRgAq+wUi2MjmrX8VX42C4DVjyctFzk3sbXuP3ZzA3+ViStkzMly+b5KTHSVRSR66xZ2JbtBczaMaTAP3puDXxh/CyvH7V0UIoGVgTOGRjKi/PGhG.ssfIHWXj7a73pKUa3kY3mF3dVhpTlp59NQWVB4HCuA+//n0CpCMZ3ELPEMIyO2FHmMCYlJgHliiqC+Q6uS7r9Fj4nu46+NIGH4f82yG0cJnRYuMjI+0CVRl/+2VXwvIL">
+                    <form action="https://mobirise.com/" method="POST" class="mbr-form form-with-styler px-2" data-form-title="My Mobirise Form"><input type="hidden" name="email" data-form-email="true" value="uObDsEisi+/csPHlRQwV5pKQBHOpKuD6c9nvQbYyl4BmwCSbtCeJuxsaneNT9HD8nAubs5vuz8f6s2ajsmEs5umxmVWEmW9kEi/RxC+GkuD1Vu7oaDk1rnokPrhpo3M=.Dr5+Ync377ZTqCYFEQAyvCy5VvooNY7I6iko494Et9G8N3R/hYPXtOYs/AnjHAbnW/BGHA9XTyttfxMPl3G6y21WG9GEJPjRT/6WssUwfojLjQgVg1pJg12nvcq3jfuF">
                         <div class="row">
                             <div hidden="hidden" data-form-alert="" class="alert alert-success col-12">Thanks for filling
                                 out the form!</div>
