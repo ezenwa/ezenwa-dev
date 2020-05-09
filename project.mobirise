@@ -39,6 +39,26 @@
         "url": "https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
       }
     ],
+    "favicon": "@PROJECT_PATH@/assets/images/favicon.svg",
+    "PWA": {
+      "enabled": true,
+      "name": "Joshua Ezenwa",
+      "icon": "@PROJECT_PATH@/assets/images/favicon_1.svg",
+      "themeColor": "#333333"
+    },
+    "imageResize": false,
+    "cssOptimize": false,
+    "lazyLoad": false,
+    "lazyType": "nothing",
+    "robotsSwitcher": false,
+    "sitemapSwitcher": false,
+    "sitemapSwitcherAuto": false,
+    "siteUrl": false,
+    "cookiesAlert": false,
+    "gdpr": false,
+    "pwa-switcher": true,
+    "witsec-white-label": false,
+    "witsec-language": false,
     "uniqCompNum": 0,
     "versionPublish": "4.12.3"
   },
@@ -48,7 +68,7 @@
         "main": true,
         "title": "Home",
         "meta_descr": "",
-        "header_custom": "<style>\n.navbar-dropdown-open:after {\n        content: \"\";\n        width: 100%;\n        height: 100%;\n        background-color: rgba(0, 0, 0, 0.6);\n        top: 0px;\n        right: 0px;\n        position: absolute;\n        display: inline-block;\n}\n\n.no-scroll{\n   overflow:hidden;\n-webkit-user-select: none;  \n  -moz-user-select: none;    \n  -ms-user-select: none;      \n  user-select: none;\n}\n</style>\n\n<script src=\"https://code.jquery.com/jquery-3.5.0.js\"></script>\n\n<script>\n$(document).ready(function(){\n  $(\"button.navbar-toggler\").click(function(){\n    $(\"body\").toggleClass('no-scroll');\n//alert(\"clicked\");\n  });\n});\n</script>\n\n\n\n",
+        "header_custom": "<style>\n.navbar-dropdown-open:after{\n        content: \"\";\n        width: 100%;\n        height: 100%;\n        background-color: rgba(0, 0, 0, 0.6);\n        top: 0px;\n        right: 0px;\n        position: absolute;\n        display: inline-block;\n}\n\n.no-scroll{\n   overflow:hidden;\n/*-webkit-user-select: none;  \n  -moz-user-select: none;    \n  -ms-user-select: none;      \n  user-select: none;*/\n}\n</style>\n\n<script src=\"https://code.jquery.com/jquery-3.5.0.js\"></script>\n\n<script>\nvar item = $('<span />');\nitem.click(function() { alert('click'); });\n$('div').append(item);\n</script>\n\n<script>\n$(document).ready(function(){\n  $(\"button.navbar-toggler\").click(function(){\n$(this).attr('disabled', true);\n$(\"body\").toggleClass('no-scroll');\n//alert(\"clicked\");\n$(this).removeAttr('disabled');\n  });\n});\n</script>\n\n\n\n",
         "footer_custom": "",
         "html_before": ""
       },
