@@ -43,15 +43,15 @@
     "imageResize": true,
     "PWA": {
       "enabled": true,
-      "name": "ezenwa",
-      "icon": "@ADDONS_PATH@/pwa-builder/assets/icons/512x512.png",
-      "themeColor": "#149dcc"
+      "name": "Joshua Ezenwa",
+      "icon": "@PROJECT_PATH@/assets/images/pwa-icon.svg",
+      "themeColor": "#6227b1"
     },
     "witsec-language": "es",
     "favicon": false,
-    "cssOptimize": false,
-    "lazyLoad": false,
-    "lazyType": "nothing",
+    "cssOptimize": true,
+    "lazyLoad": true,
+    "lazyType": "placeholder",
     "robotsSwitcher": false,
     "sitemapSwitcher": false,
     "sitemapSwitcherAuto": false,
