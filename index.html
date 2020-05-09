@@ -40,10 +40,10 @@
 
 .no-scroll{
    overflow:hidden;
-/*-webkit-user-select: none;  
+-webkit-user-select: none;  
   -moz-user-select: none;    
   -ms-user-select: none;      
-  user-select: none;*/
+  user-select: none;
 }
 </style>
 
@@ -58,10 +58,7 @@ $('div').append(item);
 <script>
 $(document).ready(function(){
   $("button.navbar-toggler").click(function(){
-$(this).attr('disabled', true);
 $("body").toggleClass('no-scroll');
-//alert("clicked");
-$(this).removeAttr('disabled');
   });
 });
 </script>
@@ -94,8 +91,12 @@ $(this).removeAttr('disabled');
 
         <div class="container">
             <div class="navbar-brand">
-                
-                <span class="navbar-caption-wrap"><a class="navbar-caption text-white display-7" href="#">DigitalM4</a></span>
+                <span class="navbar-logo">
+                    <a href="#">
+                        <img src="assets/images/favicon.svg" alt="" title="" style="height: 3.8rem;">
+                    </a>
+                </span>
+                <span class="navbar-caption-wrap"><a class="navbar-caption text-white display-7" href="#">Joshua Ezenwa</a></span>
             </div>
             <button id="disable" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" onclick="test(this)">
                 <div class="hamburger">
@@ -1202,7 +1203,7 @@ $(this).removeAttr('disabled');
                     inbox!</h4>
                 <div class="form1" data-form-type="formoid">
                     <!---Formbuilder Form--->
-                    <form action="https://mobirise.com/" method="POST" class="mbr-form form-with-styler px-2" data-form-title="My Mobirise Form"><input type="hidden" name="email" data-form-email="true" value="VYaOszyAX+bihvlCmsA5OLyJuRuPi8XYMkhEG5CWcxhE98iTq2Vw5LeCunE8cYXv2YIZ7bQYkbWVeWg9Eugj4vSfhA+R/PWx7FR4wpQAjqeP/a0wWf158oMDuOGcm7fM.116vgQWjmH0qnP954sX/1RAsElEC4QxHqzuHpqW5KZXwbd54/w+Rmh1H9a/CL+gldYevPNuW3kDPgN2Lz4E28M08FSW0SFrH67Zuy78DIU5aRuGN3Gw2reLQbVMi8beb">
+                    <form action="https://mobirise.com/" method="POST" class="mbr-form form-with-styler px-2" data-form-title="My Mobirise Form"><input type="hidden" name="email" data-form-email="true" value="fZQnxCdvg47KtyRkVg6pbt8qjvwIDSiyT+/aLX035M67+dfdjmndtQi6c2c9TbrNY1vnp8PRRCHwDw0t6XrfATLxwMlCAubQhuPVXBlLMAj/FrdgNCLdm80JJiShQPG4.Axeeb65S8g5wONZm7Xa6ks+6AeEOmxkUXd9mZnH6bEy9FkTYzMTbCtFwTdvVvWrMgZkWMLG+uNmsens7D3Zdl9scWlR/5LmPOTF70uSVHTrFAlyv3AQVzDjhQ7GGvgj7">
                         <div class="row">
                             <div hidden="hidden" data-form-alert="" class="alert alert-success col-12">Thanks for filling
                                 out the form!</div>

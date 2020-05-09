@@ -726,6 +726,11 @@ a {
   padding: 14px 45px 14px 0 !important;
   text-align: left;
 }
+@media (min-width: 992px) {
+  .cid-rVs6AFAdxl .navbar.collapsed.opened:not(.navbar-short) .navbar-collapse {
+    max-height: calc(98.5vh - 3.8rem);
+  }
+}
 .cid-rVs6AFAdxl .navbar.collapsed .dropdown-menu .dropdown-submenu {
   left: 0 !important;
 }
