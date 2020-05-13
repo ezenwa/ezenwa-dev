@@ -2270,7 +2270,7 @@ a {
   text-align: center;
   box-shadow: 2px 2px 2px #242930;
   transition: 0.3s;
-  z-index: 99999;
+  z-index: 1;
 }
 .cid-i0YkGJuvti .floating-bar:hover {
   background-color: #9ccd7e;
