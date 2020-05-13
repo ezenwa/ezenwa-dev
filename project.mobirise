@@ -24,7 +24,7 @@
         "display4Size": 1,
         "isRoundedButtons": true,
         "isAnimatedOnScroll": true,
-        "isScrollToTopButton": true
+        "isScrollToTopButton": false
       },
       "titlePreset": "Digital Startup",
       "nameSelectPreset": "digitalstartup",
@@ -43,7 +43,21 @@
     ],
     "imageResize": true,
     "uniqCompNum": 0,
-    "versionPublish": "4.12.3"
+    "versionPublish": "4.12.3",
+    "screenshot": "screenshot.png",
+    "lazyLoad": true,
+    "lazyType": "placeholder",
+    "favicon": false,
+    "cssOptimize": true,
+    "robotsSwitcher": false,
+    "sitemapSwitcher": false,
+    "sitemapSwitcherAuto": false,
+    "siteUrl": false,
+    "cookiesAlert": false,
+    "gdpr": false,
+    "pwa-switcher": false,
+    "witsec-language": false,
+    "witsec-white-label": false
   },
   "pages": {
     "index.html": {
