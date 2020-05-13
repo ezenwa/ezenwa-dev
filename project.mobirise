@@ -603,7 +603,7 @@
               "border-radius": "unit(@borderRadius, ~'%')",
               "text-align": "center",
               "& when (@shadow)": {
-                "box-shadow": "2px 2px 2px #000"
+                "box-shadow": "2px 2px 2px #242930"
               },
               "& when (@transition)": {
                 "transition": "0.3s"
@@ -623,15 +623,15 @@
             }
           },
           "_name": "design-block",
-          "_customHTML": "<section class=\"header1\" group=\"Headers\">\n    <mbr-parameters>\n       <!-- Block parameters controls (Blue \"Gear\" panel) -->\n       <input type=\"color\" title=\"Icon Color\" name=\"iconcolor\" value=\"#ffffff\">\n       <input type=\"color\" title=\"Background Color\" name=\"bgcolor\" value=\"#58b39a\">\n       <input type=\"color\" title=\"Hover Color\" name=\"hovercolor\" value=\"#9ccd7e\">\n       <input type=\"range\" inline title=\"Border Radius\" name=\"borderRadius\" min=\"0\" max=\"50\" step=\"10\" value=\"50\">\n       <input type=\"checkbox\" title=\"Shadow\" name=\"shadow\" checked>\n       <input type=\"checkbox\" title=\"Transition\" name=\"transition\" checked>\n       <!-- End block parameters -->\n    </mbr-parameters>\n\n    <a href=\"https://wa.me/5212226585270\" class=\"floating-bar\" target=\"_blank\">\n        <div class=\"valign\">\n            <span mbr-icon class=\"mbr-iconfont mbr-iconfont-btn floating-button fa-whatsapp fa\" style=\"font-size: 32px;\"></span>\n        </div>        \n    </a>\n \n    <div mbr-class=\"{'hidden': isPublish}\" style=\"padding:1rem\">Click the \"gear\" icon to change the layout of the button. This text will be removed on preview/publish.</div>\n\n</section>",
+          "_customHTML": "<section class=\"header1\" group=\"Headers\">\n    <mbr-parameters>\n       <!-- Block parameters controls (Blue \"Gear\" panel) -->\n       <input type=\"color\" title=\"Icon Color\" name=\"iconcolor\" value=\"#ffffff\">\n       <input type=\"color\" title=\"Background Color\" name=\"bgcolor\" value=\"#58b39a\">\n       <input type=\"color\" title=\"Hover Color\" name=\"hovercolor\" value=\"#9ccd7e\">\n       <input type=\"range\" inline title=\"Border Radius\" name=\"borderRadius\" min=\"0\" max=\"50\" step=\"10\" value=\"50\">\n       <input type=\"checkbox\" title=\"Shadow\" name=\"shadow\" checked>\n       <input type=\"checkbox\" title=\"Transition\" name=\"transition\" checked>\n       <!-- End block parameters -->\n    </mbr-parameters>\n\n    <a href=\"https://wa.me/5212226585270\" class=\"floating-bar\" target=\"_blank\">\n        <div class=\"valign\">\n            <span mbr-icon class=\"mbr-iconfont mbr-iconfont-btn floating-button fa-whatsapp fa\" style=\"font-size: 32px;\"></span>\n        </div>        \n    </a>\n \n    <div mbr-class=\"{'hidden': isPublish}\" style=\"padding:1rem\">Botón WhatsApp</div>\n\n</section>",
           "_cid": "i0YkGJuvti",
           "_anchor": "design-block-i0YkGJuvti",
+          "_PHPplaceholders": [],
+          "_JSplaceholders": [],
           "_protectedParams": [],
           "_global": false,
           "_once": false,
-          "_params": {},
-          "_PHPplaceholders": [],
-          "_JSplaceholders": []
+          "_params": {}
         }
       ]
     }
