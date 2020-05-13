@@ -65,8 +65,8 @@
         "main": true,
         "title": "Home",
         "meta_descr": "",
-        "header_custom": "<link rel=\"stylesheet\" href=\"css/hint.css\">\n\n<style>\nhtml, body{\nbackground-color: #000000 !important;\n}\n\n.hint--info{\ncursor: pointer;\n}\n\n#backclose:after{\ncontent: \"\";\n    width: 100%;\n    height: 100%;\n    background-color: rgba(0, 0, 0, 0.8);\n    position: fixed;\n    display: inline-flex;\n    cursor: pointer;\n    pointer-events: all;\n    top: 0;\n    margin-left: 30px;\n}\n\n#backclose:after:hover{\noverflow:hidden;\n-webkit-user-select: none;  \n  -moz-user-select: none;    \n  -ms-user-select: none;      \n  user-select: none;\ntouch-action: none;\n}\n\n.no-scroll{\noverflow:hidden;\n-webkit-user-select: none;  \n  -moz-user-select: none;    \n  -ms-user-select: none;      \n  user-select: none;\ntouch-action: none;\n}\n\n.float{\n\tposition:fixed;\n\twidth:60px;\n\theight:60px;\n\tbottom:40px;\n\tright:40px;\n\tbox-shadow: 2px 2px 3px #000;\n}\n\n</style>\n\n<script src=\"https://code.jquery.com/jquery-3.5.0.js\"></script>\n\n<script>\n$(document).ready(function() {\n$(\"button.navbar-toggler\").click(function(){\n$(\"html, body\").toggleClass(\"no-scroll\");\n});\n});\n</script>\n\n<script>\n$(document).ready(function() {\n    $('#backclose').click(function(e) {  \n$('.collapse').collapse('hide');\n$(\"html, body\").removeClass(\"no-scroll\");\n    });\n});\n</script>\n\n<script type=\"text/javascript\"> // RELOADS WEBPAGE WHEN MOBILE ORIENTATION CHANGES  \n    window.onorientationchange = function() { \n        var orientation = window.orientation; \n            switch(orientation) { \n                case 0:\n                case 90:\n                case -90: window.location.reload(); \n                break; } \n    };\n</script>",
-        "footer_custom": "<a href=\"#\" class=\"float\">\n<img src=\"https://ezenwa.github.io/ezenwa-dev/images/whatsapp.png\" alt=\"Whatsapp\" height=\"60\" width=\"60\">\n</a>",
+        "header_custom": "<link rel=\"stylesheet\" href=\"css/hint.css\">\n\n<style>\nhtml, body{\nbackground-color: #000000 !important;\n}\n\n.hint--info{\ncursor: pointer;\n}\n\n#backclose:after{\ncontent: \"\";\n    width: 100%;\n    height: 100%;\n    background-color: rgba(0, 0, 0, 0.8);\n    position: fixed;\n    display: inline-flex;\n    cursor: pointer;\n    pointer-events: all;\n    top: 0;\n    margin-left: 30px;\n}\n\n#backclose:after:hover{\noverflow:hidden;\n-webkit-user-select: none;  \n  -moz-user-select: none;    \n  -ms-user-select: none;      \n  user-select: none;\ntouch-action: none;\n}\n\n.no-scroll{\noverflow:hidden;\n-webkit-user-select: none;  \n  -moz-user-select: none;    \n  -ms-user-select: none;      \n  user-select: none;\ntouch-action: none;\n}\n</style>\n\n<script src=\"https://code.jquery.com/jquery-3.5.0.js\"></script>\n\n<script>\n$(document).ready(function() {\n$(\"button.navbar-toggler\").click(function(){\n$(\"html, body\").toggleClass(\"no-scroll\");\n});\n});\n</script>\n\n<script>\n$(document).ready(function() {\n    $('#backclose').click(function(e) {  \n$('.collapse').collapse('hide');\n$(\"html, body\").removeClass(\"no-scroll\");\n    });\n});\n</script>\n\n<script type=\"text/javascript\"> // RELOADS WEBPAGE WHEN MOBILE ORIENTATION CHANGES  \n    window.onorientationchange = function() { \n        var orientation = window.orientation; \n            switch(orientation) { \n                case 0:\n                case 90:\n                case -90: window.location.reload(); \n                break; } \n    };\n</script>",
+        "footer_custom": "",
         "html_before": ""
       },
       "components": [
@@ -585,6 +585,53 @@
           "_global": true,
           "_once": "footers",
           "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            ".hidden": {
+              "display": "none"
+            },
+            ".floating-bar": {
+              "position": "fixed",
+              "width": "60px",
+              "height": "60px",
+              "bottom": "40px",
+              "right": "40px",
+              "background-color": "@bgcolor",
+              "color": "@iconcolor",
+              "border-radius": "unit(@borderRadius, ~'%')",
+              "text-align": "center",
+              "& when (@shadow)": {
+                "box-shadow": "2px 2px 2px #000"
+              },
+              "& when (@transition)": {
+                "transition": "0.3s"
+              },
+              "z-index": "99999"
+            },
+            ".floating-bar:hover": {
+              "background-color": "@hovercolor"
+            },
+            ".floating-button": {
+              "color": "@iconcolor"
+            },
+            ".valign": {
+              "position": "relative",
+              "top": "50%",
+              "transform": "translateY(-50%)"
+            }
+          },
+          "_name": "design-block",
+          "_customHTML": "<section class=\"header1\" group=\"Headers\">\n    <mbr-parameters>\n       <!-- Block parameters controls (Blue \"Gear\" panel) -->\n       <input type=\"color\" title=\"Icon Color\" name=\"iconcolor\" value=\"#ffffff\">\n       <input type=\"color\" title=\"Background Color\" name=\"bgcolor\" value=\"#58b39a\">\n       <input type=\"color\" title=\"Hover Color\" name=\"hovercolor\" value=\"#9ccd7e\">\n       <input type=\"range\" inline title=\"Border Radius\" name=\"borderRadius\" min=\"0\" max=\"50\" step=\"10\" value=\"50\">\n       <input type=\"checkbox\" title=\"Shadow\" name=\"shadow\" checked>\n       <input type=\"checkbox\" title=\"Transition\" name=\"transition\" checked>\n       <!-- End block parameters -->\n    </mbr-parameters>\n\n    <a href=\"https://wa.me/5212226585270\" class=\"floating-bar\" target=\"_blank\">\n        <div class=\"valign\">\n            <span mbr-icon class=\"mbr-iconfont mbr-iconfont-btn floating-button fa-whatsapp fa\" style=\"font-size: 32px;\"></span>\n        </div>        \n    </a>\n \n    <div mbr-class=\"{'hidden': isPublish}\" style=\"padding:1rem\">Click the \"gear\" icon to change the layout of the button. This text will be removed on preview/publish.</div>\n\n</section>",
+          "_cid": "i0YkGJuvti",
+          "_anchor": "design-block-i0YkGJuvti",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_PHPplaceholders": [],
+          "_JSplaceholders": []
         }
       ]
     }

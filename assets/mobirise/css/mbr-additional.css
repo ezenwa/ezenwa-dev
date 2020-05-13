@@ -2255,3 +2255,31 @@ a {
 .cid-rVs6HuYwmv p {
   color: #ffffff;
 }
+.cid-i0YkGJuvti .hidden {
+  display: none;
+}
+.cid-i0YkGJuvti .floating-bar {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #58b39a;
+  color: #ffffff;
+  border-radius: 50%;
+  text-align: center;
+  box-shadow: 2px 2px 2px #000;
+  transition: 0.3s;
+  z-index: 99999;
+}
+.cid-i0YkGJuvti .floating-bar:hover {
+  background-color: #9ccd7e;
+}
+.cid-i0YkGJuvti .floating-button {
+  color: #ffffff;
+}
+.cid-i0YkGJuvti .valign {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
