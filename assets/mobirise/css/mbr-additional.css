@@ -2283,3 +2283,16 @@ a {
   top: 50%;
   transform: translateY(-50%);
 }
+.cid-bhsAvVqe7n {
+  background-color: #cccccc;
+}
+@media (max-width: 768px) {
+  .cid-bhsAvVqe7n video {
+    width: 100% !important;
+  }
+}
+.cid-bhsAvVqe7n video {
+  margin: auto;
+  display: block;
+  width: 100% !important;
+}
