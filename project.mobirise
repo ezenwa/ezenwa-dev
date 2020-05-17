@@ -688,8 +688,8 @@
                 "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
                 "playVideo": false,
                 "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
-                "image": "@PROJECT_PATH@/assets/images/09.jpg",
-                "thumb": "@PROJECT_PATH@/assets/images/09-800x533.jpg",
+                "image": "@PROJECT_PATH@/assets/images/09.jpeg",
+                "thumb": "@PROJECT_PATH@/assets/images/09-800x450.jpeg",
                 "alt": "",
                 "title": "",
                 "customStyle1": "display-7",
@@ -697,12 +697,25 @@
                 "active": false
               },
               {
+                "tags": "Videos",
+                "videoPreview": "@PROJECT_PATH@/assets/images/mobirise2020416-1936302020-4-6-19-51-40.jpg",
+                "playVideo": true,
+                "videoUrl": "https://www.youtube.com/watch?v=YfiBuEMRHMs",
+                "image": "@PROJECT_PATH@/assets/images/02.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/02-800x450.jpg",
+                "alt": "",
+                "title": "",
+                "customStyle1": "display-7",
+                "caption": "Escribir subtítulo aquí",
+                "active": true
+              },
+              {
                 "tags": "Increíble",
                 "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
                 "playVideo": false,
                 "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
-                "image": "@PROJECT_PATH@/assets/images/10.jpg",
-                "thumb": "@PROJECT_PATH@/assets/images/10-800x533.jpg",
+                "image": "@PROJECT_PATH@/assets/images/10.jpeg",
+                "thumb": "@PROJECT_PATH@/assets/images/10-800x450.jpeg",
                 "alt": "",
                 "title": "",
                 "customStyle1": "display-7",
@@ -720,7 +733,7 @@
                 "title": "",
                 "customStyle1": "display-7",
                 "caption": "Escribir subtítulo aquí",
-                "active": true
+                "active": false
               }
             ]
           }
