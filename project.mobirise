@@ -45,7 +45,7 @@
       }
     ],
     "imageResize": true,
-    "uniqCompNum": 0,
+    "uniqCompNum": 1,
     "versionPublish": "4.12.3",
     "screenshot": "screenshot.png",
     "lazyLoad": true,
@@ -559,6 +559,20 @@
           "_global": false,
           "_once": false,
           "_params": {}
+        },
+        {
+          "_customTemplate": true,
+          "_afterNavbarItem": false,
+          "_customHTML": "<video autoplay=\"autoplay\" loop=\"loop\" muted=\"\" defaultmuted=\"\" playsinline=\"\" oncontextmenu=\"return false;\" preload=\"auto\" id=\"myVideo\">\n        <source src=\"http://techslides.com/demos/sample-videos/small.mp4\" type=\"video/mp4\">\n        </video>",
+          "_customCSS": "",
+          "alias": "code-editor",
+          "_tags": [
+            "Extension"
+          ],
+          "_name": "pro.custom-html",
+          "_anchor": "custom-html-0",
+          "_PHPplaceholders": [],
+          "_JSplaceholders": []
         },
         {
           "alias": false,
