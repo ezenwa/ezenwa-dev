@@ -2283,16 +2283,101 @@ a {
   top: 50%;
   transform: translateY(-50%);
 }
-.cid-bhsAvVqe7n {
-  background-color: #cccccc;
+.cid-VglsyPmBLe {
+  padding-top: 90px;
+  padding-bottom: 90px;
+  background-color: #f7f7f7;
 }
-@media (max-width: 768px) {
-  .cid-bhsAvVqe7n video {
-    width: 100% !important;
-  }
+.cid-VglsyPmBLe h2 {
+  letter-spacing: 0.1em;
+  -webkit-font-smoothing: antialiased;
+  margin-bottom: 2rem;
 }
-.cid-bhsAvVqe7n video {
-  margin: auto;
+.cid-VglsyPmBLe .mbr-slider .carousel-control {
+  background: #1b1b1b;
+}
+.cid-VglsyPmBLe .mbr-slider .carousel-control-prev {
+  left: 0;
+  margin-left: 2.5rem;
+}
+.cid-VglsyPmBLe .mbr-slider .carousel-control-next {
+  right: 0;
+  margin-right: 2.5rem;
+}
+.cid-VglsyPmBLe .mbr-slider .modal-body .close {
+  background: #1b1b1b;
+}
+.cid-VglsyPmBLe .mbr-gallery-item > div::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #554346;
+  opacity: 0;
+  -webkit-transition: 0.2s opacity ease-in-out;
+  transition: 0.2s opacity ease-in-out;
+  background: linear-gradient(to left, #554346, #45505b) !important;
+}
+.cid-VglsyPmBLe .mbr-gallery-item > div:hover .mbr-gallery-title::before {
+  background: transparent !important;
+}
+.cid-VglsyPmBLe .mbr-gallery-item > div:hover:before {
+  opacity: 0.7 !important;
+}
+.cid-VglsyPmBLe .mbr-gallery-filter-all > a {
+  padding: 30px;
+  background-color: transparent !important;
+  color: #888888;
+}
+.cid-VglsyPmBLe .mbr-section-title {
+  padding-bottom: 2rem;
+  margin: 0;
+}
+.cid-VglsyPmBLe .mbr-section-title p {
+  margin: 0;
+}
+.cid-VglsyPmBLe .mbr-gallery-filter {
+  padding-top: 0;
+  padding-bottom: 2rem;
+}
+.cid-VglsyPmBLe .mbr-gallery-filter .btn {
+  text-transform: uppercase;
+  color: #888888;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  margin: 0px !important;
+  border: none;
+  padding: 12px 15px 12px 15px;
+}
+.cid-VglsyPmBLe .mbr-gallery-filter .btn:hover {
+  background-color: transparent;
+}
+.cid-VglsyPmBLe .mbr-gallery-filter li.active .btn {
+  background-color: transparent;
+  color: #000000;
+}
+.cid-VglsyPmBLe .mbr-gallery-title {
+  position: absolute;
   display: block;
-  width: 100% !important;
+  width: 100%;
+  bottom: 0;
+  padding: 1rem;
+  color: #fff;
+  z-index: 2;
+}
+.cid-VglsyPmBLe .mbr-gallery-title:before {
+  content: " ";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  position: absolute;
+  background: #554346 !important;
+  opacity: 0.7;
+  -webkit-transition: 0.2s background ease-in-out;
+  transition: 0.2s background ease-in-out;
+  background: linear-gradient(to left, #554346, #45505b) !important;
 }
