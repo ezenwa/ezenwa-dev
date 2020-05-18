@@ -45,7 +45,7 @@
       }
     ],
     "imageResize": true,
-    "uniqCompNum": 1,
+    "uniqCompNum": 2,
     "versionPublish": "4.12.3",
     "screenshot": "screenshot.png",
     "lazyLoad": true,
@@ -562,27 +562,9 @@
         },
         {
           "alias": false,
-          "_styles": {
-            "background-color": "@bgcolor",
-            "& when (@fullWidth = false)": {
-              "padding-top": "(@paddingTop * 15px)",
-              "padding-bottom": "(@paddingBottom * 15px)"
-            },
-            "@media (max-width: 768px)": {
-              "video": {
-                "width": "100% !important"
-              }
-            },
-            "video": {
-              "margin": "auto",
-              "display": "block",
-              "& when (@fullWidth)": {
-                "width": "100% !important"
-              }
-            }
-          },
+          "_styles": {},
           "_name": "design-block",
-          "_customHTML": "<section group=\"Images & Videos\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" value=\"4\" step=\"1\" condition=\"fullWidth==false\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" value=\"4\" step=\"1\" condition=\"fullWidth==false\">\n    <input type=\"range\" inline title=\"Width\" name=\"videoSize\" min=\"20\" max=\"100\" value=\"46\" step=\"1\" condition=\"fullWidth==false\">\n    <input type=\"text\" title=\"Video URL or filename\" name=\"videoSrc\" value=\"https://www.w3schools.com/html/mov_bbb.mp4\">\n    <input type=\"text\" title=\"Poster URL or filename\" name=\"videoPoster\" value>\n    <input type=\"color\" title=\"Background Color\" name=\"bgcolor\" value=\"#cccccc\" selected>\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <figure class=\"mbr-figure align-center\">\n      <video mbr-style=\"{'width':videoSize+'%'}\" poster=\"{{ videoPoster }}\" autoplay=\"autoplay\" loop=\"loop\" muted defaultMuted playsinline>\n        <source src=\"{{ videoSrc }}\" type=\"video/mp4\">\n      </video>\n    </figure>\n</section>",
+          "_customHTML": "<!-- Para calcular padding-top: calc(alto / ancho * 100%); -->\n\n<div class=\"responsive\" style=\"position: relative; padding-top: calc(1080 / 1920 * 100%);\">\n  <video autoplay=\"autoplay\" loop=\"loop\" muted defaultMuted playsinline  oncontextmenu=\"return false;\"  preload=\"auto\">\n        <source src=\"https://www.w3schools.com/html/mov_bbb.mp4\" type=\"video/mp4\">\n        </video>\n</div>",
           "_cid": "xrsj4JdeoZ",
           "_anchor": "design-block-xrsj4JdeoZ",
           "_PHPplaceholders": [],
