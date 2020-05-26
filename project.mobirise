@@ -709,6 +709,19 @@
                 "customStyle1": "display-7",
                 "caption": "Escribir subtítulo aquí",
                 "active": true
+              },
+              {
+                "tags": "Logos",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/3bh-logo-1920x1080.png",
+                "thumb": "@PROJECT_PATH@/assets/images/3bh-logo-1920x1080-800x450.png",
+                "alt": "",
+                "title": "",
+                "customStyle1": "display-7",
+                "caption": "Escribir subtítulo aquí",
+                "active": false
               }
             ]
           }
