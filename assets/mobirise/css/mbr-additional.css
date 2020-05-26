@@ -2258,7 +2258,7 @@ a {
   height: 100%;
   z-index: 1;
 }
-#custom-html-3 iframe {
+#custom-html-3 .responsive {
   padding: 5%;
 }
 .cid-VglsyPmBLe {
