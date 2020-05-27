@@ -2383,16 +2383,9 @@ a {
 }
 .cid-1k2qb4vIis {
   background-color: #12566a;
-  padding-top: 0px;
-  padding-bottom: 0px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .cid-1k2qb4vIis iframe {
   background-color: #38346b;
-}
-.cid-1k2qb4vIis .center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  border: 3px solid green;
 }
