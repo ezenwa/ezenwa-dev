@@ -49,7 +49,7 @@
     "versionPublish": "4.12.3",
     "screenshot": "screenshot.png",
     "lazyLoad": true,
-    "lazyType": "placeholder",
+    "lazyType": "blur",
     "favicon": false,
     "cssOptimize": true,
     "robotsSwitcher": false,
