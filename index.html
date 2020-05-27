@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html  >
+<html lang="es"   >
 <head>
   
   <meta charset="UTF-8">
@@ -14,14 +14,12 @@
   <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.css">
   <link rel="stylesheet" href="assets/web/assets/mobirise-icons/mobirise-icons.css">
   <link rel="stylesheet" href="assets/tether/tether.min.css">
-  <link rel="stylesheet" href="assets/facebook-plugin/style.css">
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
-  <link rel="stylesheet" href="assets/animatecss/animate.min.css">
-  <link rel="stylesheet" href="assets/socicon/css/styles.css">
+  <link rel="stylesheet" href="assets/facebook-plugin/style.css">
   <link rel="stylesheet" href="assets/dropdown/css/style.css">
-  <link rel="stylesheet" href="assets/gallery/style.css">
+  <link rel="stylesheet" href="assets/socicon/css/styles.css">
   <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
   
   <script src="assets/web/assets/lazyload/lazyload.js"></script>
@@ -98,6 +96,22 @@ $("html, body").removeClass("no-scroll");
                 break; } 
     };
 </script>
+
+<script>
+  var framefenster = document.getElementsByTagName("iFrame"); 
+  var auto_resize_timer = window.setInterval("autoresize_frames()", 400); 
+  function autoresize_frames() { 
+    for (var i = 0; i < framefenster.length; ++i) { 
+        if(framefenster[i].contentWindow.document.body){ 
+          var framefenster_size = framefenster[i].contentWindow.document.body.offsetHeight; 
+          if(document.all && !window.opera) { 
+            framefenster_size = framefenster[i].contentWindow.document.body.scrollHeight; 
+          } 
+          framefenster[i].style.height = framefenster_size + 50 + 'px'; 
+        } 
+    } 
+  } 
+</script> 
 <meta name="theme-color" content="#242930">
 <link rel="manifest" href="manifest.json">
 <script src="sw-connect.js"></script>
@@ -114,6 +128,10 @@ $("html, body").removeClass("no-scroll");
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 </head>
 <body>
+
+<section id='top-1'></section>
+
+
 
 <!-- Analytics -->
 <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -139,7 +157,7 @@ $("html, body").removeClass("no-scroll");
             <div class="navbar-brand">
                 <span class="navbar-logo">
                     <a href="index.html">
-                        <img src="assets/images/favicon-122x122.png" alt="ezenwa.dev" title="" style="height: 3.8rem;">
+                        <img src="assets/images/favicon-122x122.png" alt="" title="" style="height: 3.8rem;">
                     </a>
                 </span>
                 <span class="navbar-caption-wrap"><a class="navbar-caption text-white display-7" href="index.html">Joshua Ezenwa</a></span>
@@ -185,26 +203,29 @@ $("html, body").removeClass("no-scroll");
                     
 
                 </div>
+                
+                <div id="Contenido">
                 <h1 class="mbr-section-title mbr-bold pb-3 mbr-fonts-style display-1">ezenwa.dev</h1>
-                <p class="mbr-text pb-3 mbr-semibold mbr-fonts-style display-7">Artista CGI / Desarrollador Multimedia y Web con vasta experiencia en publicidad y tecnologías de la información. He desarrollado y gestionado proyectos en diversas agencias creativas, también he trabajado como consultor y como docente para instituciones de educación superior, especialmente en capacitación de software.</p>
-                <div class="mbr-section-btn"><a class="btn btn-lg btn-white display-4" href="https://mx.linkedin.com/in/ezenwa" target="_blank">VER CV</a></div>
+                <p data-jo-content="repeated" class="mbr-text pb-3 mbr-semibold mbr-fonts-style display-7">Artista CGI / Desarrollador Multimedia y Web con vasta experiencia en publicidad y tecnologías de la información. He desarrollado y gestionado proyectos en diversas agencias creativas, también he trabajado como consultor y como docente para instituciones de educación superior, especialmente en capacitación de software.</p>
+                    
+                <div class="mbr-section-btn"><a class="btn btn-lg btn-white display-4" href="https://mx.linkedin.com/in/ezenwa" target="_blank">VER CV</a>
+                    </div>
+                    </div>
             </div>
         </div>
     </div>
 </section>
 
-<section class="cid-s0b1OJaT2W" style="padding: 5%" id="design-block-b">
+<section class="cid-Z3Mx6NiZDS" style="padding:10%;" id="design-block-Z3Mx6NiZDS">
 
-    
+ 
 
-    
-    <div style="position: relative; overflow: hidden; padding-top:calc( 1080 / 1920 * 100%);">
-       <iframe gesture="media" allow="encrypted-media" allowfullscreen="" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;        border: 0; " src="//ezenwa.org/portafolio/branding/"></iframe>
-    </div>
-     
+ <div style="position: relative; overflow: hidden; padding-top:calc( 1080 / 1920 * 100%);">
+ <iframe allowfullscreen="yes" style="position:absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" src="https://ezenwa.org/portafolio/branding/"></iframe>
+ </div> 
 </section>
 
-
+<div id="custom-html-9"></div>
 
 <section once="footers" class="cid-rVs6HuYwmv" id="footer02-c">
 
@@ -238,25 +259,18 @@ $("html, body").removeClass("no-scroll");
   <script src="assets/web/assets/jquery/jquery.min.js"></script>
   <script src="assets/tether/tether.min.js"></script>
   <script src="assets/popper/popper.min.js"></script>
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
   <script src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5"></script>
   <script src="https://apis.google.com/js/plusone.js"></script>
   <script src="assets/facebook-plugin/facebook-script.js"></script>
-  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-  <script src="assets/parallax/jarallax.min.js"></script>
   <script src="assets/smoothscroll/smooth-scroll.js"></script>
-  <script src="assets/touchswipe/jquery.touch-swipe.min.js"></script>
-  <script src="assets/masonry/masonry.pkgd.min.js"></script>
-  <script src="assets/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/bootstrapcarouselswipe/bootstrap-carousel-swipe.js"></script>
-  <script src="assets/viewportchecker/jquery.viewportchecker.js"></script>
+  <script src="assets/parallax/jarallax.min.js"></script>
   <script src="assets/dropdown/js/nav-dropdown.js"></script>
   <script src="assets/dropdown/js/navbar-dropdown.js"></script>
+  <script src="assets/touchswipe/jquery.touch-swipe.min.js"></script>
   <script src="assets/theme/js/script.js"></script>
-  <script src="assets/gallery/player.min.js"></script>
-  <script src="assets/gallery/script.js"></script>
   
   
-  <input name="animation" type="hidden">
-  
+
 </body>
 </html>
