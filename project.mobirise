@@ -561,161 +561,6 @@
           "_params": {}
         },
         {
-          "_customTemplate": true,
-          "_afterNavbarItem": false,
-          "_customHTML": "<div style=\"position:relative;padding-top:calc(1080/1920*100%);margin-bottom:10%!important;\">\n    <iframe class=\"iresponsive\" src=\"//ezenwa.org/portafolio/branding/\" frameborder=\"0\" allowfullscreen=\"yes\" style=\"position:absolute;top:0;left:0;width:80%;height:80%;margin:10%!important;padding:0 !important\"></iframe>\n</div>",
-          "_customCSS": "",
-          "alias": "code-editor",
-          "_tags": [
-            "Extension"
-          ],
-          "_name": "pro.custom-html",
-          "_anchor": "custom-html-3",
-          "_PHPplaceholders": [],
-          "_JSplaceholders": []
-        },
-        {
-          "alias": "mobirise4-blocks/components",
-          "_isSecondary": true,
-          "typeCompatible": "type",
-          "_styles": {
-            "& when not (@fullScreen)": {
-              "padding-top": "(@paddingTop * 15px)",
-              "padding-bottom": "(@paddingBottom * 15px)"
-            },
-            "& when (@bg-type = 'color')": {
-              "background-color": "@bg-value"
-            },
-            "& when (@bg-type = 'image')": {
-              "background-image": "url(@bg-value)"
-            },
-            "@media (max-width: 992px)": {
-              "& when not (@fullScreen)": {
-                "padding-top": "(@paddingTop * 10px)",
-                "padding-bottom": "(@paddingBottom * 10px)"
-              }
-            },
-            ".text": {
-              "padding": "0"
-            },
-            "section": {
-              "position": "relative"
-            },
-            "h3": {
-              "padding-bottom": "0",
-              "margin-bottom": "0"
-            },
-            ".mbr-iconfont": {
-              "padding": "0!important"
-            },
-            ".back": {
-              "position": "absolute",
-              "bottom": "0",
-              "left": "0",
-              "width": "100%",
-              "height": "~\"@{halfHeight}%\"",
-              "background-color": "@half"
-            },
-            ".box": {
-              "background-image": "url(@video)",
-              "background-size": "cover",
-              "background-position": "center",
-              "height": "550px",
-              "margin": "auto",
-              "display": "flex",
-              "align-items": "center",
-              "justify-content": "center"
-            },
-            ".icon-wrap": {
-              "background-color": "@iconBGColor !important",
-              "width": "80px",
-              "height": "80px",
-              "margin": "auto",
-              "display": "flex",
-              "justify-content": "center",
-              "align-items": "center",
-              "transition": "all 0.3s",
-              "&:hover": {
-                "transform": "scale(1.1)"
-              }
-            },
-            ".icon-wrap span": {
-              "padding-left": "8px"
-            },
-            ".mbr-media span": {
-              "font-size": "30px",
-              "cursor": "pointer",
-              "position": "relative",
-              "display": "inline-block",
-              "transition": "all 0.25s",
-              "color": "@iconColor !important",
-              "&.mbri-play:before": {
-                "position": "absolute",
-                "left": "50%",
-                "-webkit-transform": "translateX(-35%)",
-                "-moz-transform": "translateX(-35%)",
-                "-ms-transform": "translateX(-35%)",
-                "-o-transform": "translateX(-35%)",
-                "transform": "translateX(-35%)"
-              }
-            },
-            ".modalWindow": {
-              "position": "fixed",
-              "z-index": "5000",
-              "left": "0",
-              "top": "0",
-              "background-color": "rgba(61, 61, 61, 0.65)",
-              "width": "100%",
-              "height": "100%",
-              ".modalWindow-container": {
-                "display": "table-cell",
-                "vertical-align": "middle"
-              },
-              ".modalWindow-video": {
-                "height": "calc(80vw / 1.778)",
-                "width": "80vw",
-                "margin": "0 auto"
-              }
-            },
-            "a.close": {
-              "position": "absolute",
-              "right": "4vw",
-              "top": "4vh",
-              "color": "#ffffff",
-              "z-index": "5000000",
-              "font-size": "37px",
-              "background": "#000",
-              "padding": "20px",
-              "border-radius": "50%",
-              "&:hover": {
-                "color": "#ffffff"
-              }
-            },
-            "@media (max-width: 767px)": {
-              "& when not (@fullScreen)": {
-                "padding-top": "(@paddingTop * 7px)",
-                "padding-bottom": "(@paddingBottom * 7px)"
-              },
-              ".box": {
-                "height": "250px"
-              },
-              ".row": {
-                "padding": "1rem!important"
-              }
-            }
-          },
-          "_name": "extVideo1",
-          "_customHTML": "<section group=\"Additional Blocks\" mbr-class=\"{'mbr-fullscreen': fullScreen,\n                    'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\" checked>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"color\" title=\"Icon Color\" name=\"iconColor\" value=\"#ffffff\">\n        <input type=\"color\" title=\"Icon BG Color\" name=\"iconBGColor\" value=\"#149dcc\">\n        <input type=\"text\" title=\"Iframe Xara\" name=\"iframe\" value=\"https://ezenwa.org/portafolio/barnding/\">\n        <input type=\"range\" inline title=\"Half BG Height\" name=\"halfHeight\" min=\"20\" max=\"80\" step=\"5\" value=\"50\">\n        <input type=\"color\" title=\"Half BG Color\" name=\"half\" value=\"#ffdf54\">\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" value=\"../_images/background3.jpg\" title=\"Background Image\">\n            <input type=\"color\" value=\"#ffffff\" title=\"Background Color\" selected>\n            <input type=\"iframe\" value=\"https://ezenwa.org/portafolio/branding/\" title=\"Iframe Xara\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay&&bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" condition=\"overlay&&bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay&&bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div class=\"back\"></div>\n\n    <div class=\"container align-center\">\n        <div class=\"col-md-12 col-lg-12 text\">\n            <h2 class=\"mbr-section-title align-center mbr-semibold pb-4 mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\">Industry In Action\n            </h2>\n        </div>\n\n        <div class=\"row justify-content-center\">\n            <div class=\"mbr-white box col-md-12 col-12 col-lg-10\">\n                \n<iframe width=\"100%\" height=\"100%\" data-src=\"{{miframe}}\" frameborder=\"0\" allowfullscreen=\"1\"></iframe>\n            </div>\n        </div>\n    </div>\n</section>",
-          "_cid": "s09UmTaKg5",
-          "_anchor": "extVideo1-9",
-          "_PHPplaceholders": [],
-          "_JSplaceholders": [],
-          "_protectedParams": [],
-          "_global": false,
-          "_once": false,
-          "_params": {}
-        },
-        {
           "alias": false,
           "_styles": {
             "padding-top": "(@paddingTop * 15px)",
@@ -969,6 +814,38 @@
           "_customHTML": "<section class=\"header1\" group=\"Headers\">\n    <mbr-parameters>\n       <!-- Block parameters controls (Blue \"Gear\" panel) -->\n       <input type=\"color\" title=\"Icon Color\" name=\"iconcolor\" value=\"#ffffff\">\n       <input type=\"color\" title=\"Background Color\" name=\"bgcolor\" value=\"#00bfa5\">\n       <input type=\"color\" title=\"Hover Color\" name=\"hovercolor\" value=\"#00bfa5\">\n       <input type=\"range\" inline title=\"Border Radius\" name=\"borderRadius\" min=\"0\" max=\"50\" step=\"10\" value=\"50\">\n       <input type=\"checkbox\" title=\"Shadow\" name=\"shadow\" checked>\n       <input type=\"checkbox\" title=\"Transition\" name=\"transition\" checked>\n       <!-- End block parameters -->\n    </mbr-parameters>\n\n    <a href=\"https://wa.me/5212226585270\" class=\"floating-bar\" target=\"_blank\">\n        <div class=\"valign\">\n            <span mbr-icon class=\"mbr-iconfont mbr-iconfont-btn floating-button fa-whatsapp fa\" style=\"font-size: 32px;\"></span>\n        </div>        \n    </a>\n \n    <div mbr-class=\"{'hidden': isPublish}\" style=\"padding:0rem\">Botón WhatsApp</div>\n\n</section>",
           "_cid": "i0YkGJuvti",
           "_anchor": "design-block-i0YkGJuvti",
+          "_PHPplaceholders": [],
+          "_JSplaceholders": [],
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "background-color": "@bgcolor",
+            "& when (@fullWidth = false)": {
+              "padding-top": "(@paddingTop * 15px)",
+              "padding-bottom": "(@paddingBottom * 15px)"
+            },
+            "@media (max-width: 768px)": {
+              "video": {
+                "width": "100% !important"
+              }
+            },
+            "video": {
+              "margin": "auto",
+              "display": "block",
+              "& when (@fullWidth)": {
+                "width": "100% !important"
+              }
+            }
+          },
+          "_name": "design-block",
+          "_customHTML": "<section group=\"Images &amp; Videos\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n    <input type=\"range\" inline=\"\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" value=\"4\" step=\"1\" condition=\"fullWidth==false\">\n    <input type=\"range\" inline=\"\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" value=\"4\" step=\"1\" condition=\"fullWidth==false\">\n    <input type=\"range\" inline=\"\" title=\"Width\" name=\"videoSize\" min=\"20\" max=\"100\" value=\"46\" step=\"1\" condition=\"fullWidth==false\">\n    <input type=\"text\" title=\"Video URL or filename\" name=\"videoSrc\" value=\"//ezenwa.org/portafolio/branding/\">\n    <input type=\"text\" title=\"Poster URL or filename\" name=\"videoPoster\" value=\"\">\n    <input type=\"color\" title=\"Background Color\" name=\"bgcolor\" value=\"#cccccc\" selected=\"\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n     <div style=\"position:relative;padding-top:calc(1080/1920*100%);margin-bottom:10%!important;\">\n        <iframe class=\"iresponsive\" src=\"{{ videoSrc }}\" frameborder=\"0\" allowfullscreen=\"yes\" style=\"position:absolute;top:0;left:0;width:80%;height:80%;margin:10%!important;padding:0 !important\"></iframe>\n    </div>\n    \n    \n</section>\n\n\n\n\n",
+          "_cid": "1k2qb4vIis",
+          "_anchor": "design-block-1k2qb4vIis",
           "_PHPplaceholders": [],
           "_JSplaceholders": [],
           "_protectedParams": [],
