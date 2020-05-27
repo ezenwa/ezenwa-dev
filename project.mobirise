@@ -563,22 +563,8 @@
         {
           "_customTemplate": true,
           "_afterNavbarItem": false,
-          "_customHTML": "<video autoplay=\"autoplay\" loop=\"loop\" id=\"video_background\" preload=\"auto\" oncontextmenu=\"return false;\" muted=\"\" defaultmuted=\"\" playsinline=\"\">\n   <source src=\"https://www.w3schools.com/html/mov_bbb.mp4\" type=\"video/mp4\">\n</video>",
-          "_customCSS": "#video_background {\n position: absolute;\n bottom: 0px;\n right: 0px;\n min-width: 100%;\n min-height: 100%;\n width: auto;\n height: auto;\n z-index: -1000;\n overflow: hidden;\n }\n #video_pattern {\n background:#fff;\n position: fixed;\n opacity: 0.8;\n left: 0px;\n top: 0px;\n width: 100%;\n height: 100%;\n z-index: 1;\n }",
-          "alias": "code-editor",
-          "_tags": [
-            "Extension"
-          ],
-          "_name": "pro.custom-html",
-          "_anchor": "custom-html-2",
-          "_PHPplaceholders": [],
-          "_JSplaceholders": []
-        },
-        {
-          "_customTemplate": true,
-          "_afterNavbarItem": false,
-          "_customHTML": "<div style=\"margin:10%;\">\n    <div style=\"position: relative; padding-top: calc(1080 / 1920 * 100%);\">\n      <iframe src=\"//ezenwa.org/portafolio/branding/\" frameborder=\"0\" allowfullscreen=\"\" style=\"position:absolute;top:0;left:0;width:80%;height:80%;\"></iframe>\n    </div>\n</div>",
-          "_customCSS": "",
+          "_customHTML": "    <div style=\"position: relative; padding-top: calc(1080 / 1920 * 100%);\">\n      <iframe src=\"//ezenwa.org/portafolio/branding/\" frameborder=\"0\" allowfullscreen=\"\" style=\"position:absolute;top:0;left:0;width:80%;height:80%;\"></iframe>\n    </div>",
+          "_customCSS": "iframe {margin:10% !important;}",
           "alias": "code-editor",
           "_tags": [
             "Extension"
