@@ -48,7 +48,7 @@
     "uniqCompNum": 10,
     "versionPublish": "4.12.3",
     "screenshot": "screenshot.png",
-    "lazyLoad": true,
+    "lazyLoad": false,
     "lazyType": "placeholder",
     "favicon": false,
     "cssOptimize": true,
