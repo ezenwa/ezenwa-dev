@@ -563,7 +563,7 @@
         {
           "_customTemplate": true,
           "_afterNavbarItem": false,
-          "_customHTML": "    <div style=\"position: relative; padding-top: calc(1080 / 1920 * 100%);\">\n      <iframe src=\"//ezenwa.org/portafolio/branding/\" frameborder=\"0\" allowfullscreen=\"\" style=\"position:absolute;top:0;left:0;width:80%;height:80%;\"></iframe>\n    </div>",
+          "_customHTML": "    <div style=\"position: relative; padding-top: calc(1080 / 1920 * 100%); margin-bottom:10% !important;\">\n      <iframe src=\"//ezenwa.org/portafolio/branding/\" frameborder=\"0\" allowfullscreen=\"\" style=\"position:absolute;top:0;left:0;width:80%;height:80%;\"></iframe>\n    </div>",
           "_customCSS": "iframe {\n    margin:10% !important;\n    margin-bottom:10% !important;\n}",
           "alias": "code-editor",
           "_tags": [
