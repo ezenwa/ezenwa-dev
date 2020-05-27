@@ -223,7 +223,7 @@ $("html, body").removeClass("no-scroll");
 
 </section>
 
-<section style="" class="cid-1k2qb4vIis" id="xaraContent">
+<section style="" class="cid-s0b1OJaT2W" id="design-block-b">
 
     
 
@@ -231,11 +231,22 @@ $("html, body").removeClass("no-scroll");
         <iframe src="{{ iframeSrc }}" frameborder="0" allowfullscreen="yes" style="position: absolute; top: 0; left: 0; width: 80%; height: 80%; margin: {{ marginPercentage}}% !important;"></iframe>
     </div>-->
     
- <div style="position: relative; padding-top: calc( 1080 / 1920 * 100%); margin: 0 auto; width:100%">
-  <iframe frameborder="0" allowfullscreen="yes" style="position: absolute; top:0; left:0; margin: 0 auto;" src="//ezenwa.org/portafolio/branding/" width="85%" height="85%"></iframe>
-</div>--&gt;
+    <!--<div style="position: relative; padding-top: calc(1080 / 1920 * 100%); margin: 0 auto; height:100%">
+  <iframe src="{{ iframeSrc }}" frameborder="0" allowfullscreen width="{{ maxSize }}%" height="{{ maxSize }}%" style="position: absolute; top:0; left:0; margin: 0 auto;"></iframe>
+</div>-->
     
     
+<!--<div style="position:relative; padding-top:calc( {{ Height }} / {{ Width }} * 100%);">
+  <iframe class="center" src="{{ iframeSrc }}" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 50%; width: {{ maxSize }}%; height: {{ maxSize }}%; transform: translate(-50%, -0%);"></iframe>
+</div>-->
+    
+<!--<div class="embed-responsive {{proportion}} text-center" style>
+  <iframe class="embed-responsive-item" src="{{ iframeSrc }}" frameborder="0" allowfullscreen style="width:{{Width}}px; height:{{Height}}px;"></iframe>
+</div>-->  
+
+    <div style="" class="embed-responsive embed-responsive-16by9 text-center">
+  <iframe class="embed-responsive-item" frameborder="0" allowfullscreen="yes" src="//ezenwa.org/portafolio/branding/" width="1920" height="1080"></iframe>
+</div>    
     
     
 </section>
