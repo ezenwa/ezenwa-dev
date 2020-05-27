@@ -1937,7 +1937,7 @@ a {
 .cid-rVs6AFAdxl .navbar {
   min-height: 77px;
   transition: all 0.3s;
-  background: #242930;
+  background: #1e2228;
 }
 .cid-rVs6AFAdxl .navbar.opened {
   transition: all 0.3s;
@@ -2086,7 +2086,7 @@ a {
   }
 }
 .cid-rVs6AFAdxl .navbar.navbar-short {
-  background: #242930 !important;
+  background: #1e2228 !important;
   min-height: 60px;
 }
 .cid-rVs6AFAdxl .navbar.navbar-short .navbar-logo img {
@@ -2127,7 +2127,7 @@ a {
   padding: 0.667em 1.667em;
 }
 .cid-rVs6AFAdxl .navbar.navbar-expand-lg .dropdown .dropdown-menu {
-  background: #242930;
+  background: #1e2228;
 }
 .cid-rVs6AFAdxl .navbar.navbar-expand-lg .dropdown .dropdown-menu .dropdown-submenu {
   margin: 0;
