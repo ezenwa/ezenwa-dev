@@ -45,7 +45,7 @@
       }
     ],
     "imageResize": true,
-    "uniqCompNum": 12,
+    "uniqCompNum": 13,
     "versionPublish": "4.12.3",
     "screenshot": "screenshot.png",
     "lazyLoad": true,
@@ -80,6 +80,63 @@
         "html_before": ""
       },
       "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 15px)",
+              "padding-bottom": "(@paddingBottom * 15px)"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            ".mbr-iconfont": {
+              "display": "block",
+              "font-size": "6rem",
+              "color": "@iconColor",
+              "margin-bottom": "2rem"
+            },
+            ".btn.display-4": {
+              "font-size": "14px",
+              "line-height": "1"
+            }
+          },
+          "_name": "header02",
+          "_customHTML": "<section group=\"Headers\" class=\"header02\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"20\" step=\"1\" value=\"16\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"20\" step=\"1\" value=\"10\" condition=\"fullScreen == false\">\n        <header>Show / Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\" checked>\n        <input type=\"checkbox\" title=\"Icon\" name=\"showIcon\">\n        <hr>\n        <input type=\"color\" title=\"Icon Color\" name=\"iconColor\" value=\"#848abd\" selected condition=\"showIcon\">\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/mbr-1920x1280.jpg\" parallax selected>\n            <input type=\"color\" title=\"Background Color\" value=\"#000000\">\n            <input type=\"video\" title=\"Background Video\" value=\"https://www.youtube.com/watch?v=36YgDDJ7XSc\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#333333\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"container align-center\">\n        <div class=\"row justify-content-center\">\n            <div class=\"mbr-white col-md-12 col-lg-9\">\n                <div class=\"icon-wrap\">\n                    <span mbr-icon class=\"mbr-iconfont mbri-rocket\" mbr-if=\"showIcon\"></span>\n\n                </div>\n                <h1 class=\"mbr-section-title mbr-bold pb-3 mbr-fonts-style\" data-app-selector=\".mbr-section-title, .icon-wrap, .mbr-section-btn\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\">ezenwa.dev</h1>\n                <p class=\"mbr-text pb-3 mbr-semibold mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Artista CGI / Desarrollador Multimedia y Web con vasta experiencia en publicidad y tecnologías de la información. He desarrollado y gestionado proyectos en diversas agencias creativas, también he trabajado como consultor y como docente para instituciones de educación superior, especialmente en capacitación de software.</p>\n                <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-lg btn-white\" href=\"https://mx.linkedin.com/in/ezenwa\" data-app-placeholder=\"Type Text\" target=\"_blank\">VER CV</a></div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_anchor": "header02-1",
+          "_isUserblock": true,
+          "_sourceTheme": "digitalm4",
+          "_cid": "rVs6BwK6TX",
+          "_PHPplaceholders": [],
+          "_JSplaceholders": [],
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "_name": "design-block",
+          "_styles": {
+            "background-color": "@bgcolor",
+            "iframe": {
+              "background-color": "@iframebgcolor"
+            }
+          },
+          "_customHTML": "<section group=\"Ezenwa\" style=\"padding: {{Padding}}%\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"text\" title=\"Proportion Width\" name=\"Width\" value=\"1920\">\n        <input type=\"text\" title=\"Iframe height\" name=\"Height\" value=\"1080\">\n        <input type=\"range\" inline title=\"Padding Percentage\" name=\"Padding\" min=\"0\" max=\"25\" value=\"5\" step=\"1\">\n        <input type=\"text\" title=\"Xara URL\" name=\"iframeSrc\" value=\"//ezenwa.org/portafolio/branding/\">\n        <input type=\"color\" title=\"Background Color\" name=\"bgcolor\" value=\"#12566a\" selected>\n        <input type=\"color\" title=\"Iframe Background Color\" name=\"iframebgcolor\" value=\"#b97ecd\" selected>\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    \n    <div style=\"position: relative; overflow: hidden; padding-top:calc( {{ Height }} / {{ Width }} * 100%);\">\n       <iframe src=\"{{iframeSrc}}\" gesture=\"media\" allow=\"encrypted-media\" allowfullscreen style=\"position: absolute; top: 0; left: 0; width: 100%; height: 100%;        border: 0; \"></iframe>\n    </div>\n     \n</section>",
+          "_JSplaceholders": [],
+          "_PHPplaceholders": [],
+          "_anchor": "design-block-b",
+          "_isUserblock": true,
+          "_sourceTheme": "digitalm4",
+          "_cid": "s0b1OJaT2W",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
         {
           "alias": false,
           "_styles": {
@@ -526,43 +583,6 @@
         {
           "alias": false,
           "_styles": {
-            "& when not (@fullScreen)": {
-              "padding-top": "(@paddingTop * 15px)",
-              "padding-bottom": "(@paddingBottom * 15px)"
-            },
-            "& when (@bg-type = \"image\")": {
-              "background-image": "url(@bg-value)"
-            },
-            "& when (@bg-type = \"color\")": {
-              "background-color": "@bg-value"
-            },
-            ".mbr-iconfont": {
-              "display": "block",
-              "font-size": "6rem",
-              "color": "@iconColor",
-              "margin-bottom": "2rem"
-            },
-            ".btn.display-4": {
-              "font-size": "14px",
-              "line-height": "1"
-            }
-          },
-          "_name": "header02",
-          "_customHTML": "<section group=\"Headers\" class=\"header02\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"20\" step=\"1\" value=\"16\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"20\" step=\"1\" value=\"10\" condition=\"fullScreen == false\">\n        <header>Show / Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\" checked>\n        <input type=\"checkbox\" title=\"Icon\" name=\"showIcon\">\n        <hr>\n        <input type=\"color\" title=\"Icon Color\" name=\"iconColor\" value=\"#848abd\" selected condition=\"showIcon\">\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/mbr-1920x1280.jpg\" parallax selected>\n            <input type=\"color\" title=\"Background Color\" value=\"#000000\">\n            <input type=\"video\" title=\"Background Video\" value=\"https://www.youtube.com/watch?v=36YgDDJ7XSc\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#333333\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"container align-center\">\n        <div class=\"row justify-content-center\">\n            <div class=\"mbr-white col-md-12 col-lg-9\">\n                <div class=\"icon-wrap\">\n                    <span mbr-icon class=\"mbr-iconfont mbri-rocket\" mbr-if=\"showIcon\"></span>\n\n                </div>\n                <h1 class=\"mbr-section-title mbr-bold pb-3 mbr-fonts-style\" data-app-selector=\".mbr-section-title, .icon-wrap, .mbr-section-btn\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\">ezenwa.dev</h1>\n                <p class=\"mbr-text pb-3 mbr-semibold mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Artista CGI / Desarrollador Multimedia y Web con vasta experiencia en publicidad y tecnologías de la información. He desarrollado y gestionado proyectos en diversas agencias creativas, también he trabajado como consultor y como docente para instituciones de educación superior, especialmente en capacitación de software.</p>\n                <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-lg btn-white\" href=\"https://mx.linkedin.com/in/ezenwa\" data-app-placeholder=\"Type Text\" target=\"_blank\">VER CV</a></div>\n            </div>\n        </div>\n    </div>\n</section>",
-          "_anchor": "header02-1",
-          "_isUserblock": true,
-          "_sourceTheme": "digitalm4",
-          "_cid": "rVs6BwK6TX",
-          "_PHPplaceholders": [],
-          "_JSplaceholders": [],
-          "_protectedParams": [],
-          "_global": false,
-          "_once": false,
-          "_params": {}
-        },
-        {
-          "alias": false,
-          "_styles": {
             "padding-top": "(@paddingTop * 15px)",
             "padding-bottom": "(@paddingBottom * 15px)",
             "background-color": "@bgColor",
@@ -816,30 +836,6 @@
           "_anchor": "design-block-i0YkGJuvti",
           "_PHPplaceholders": [],
           "_JSplaceholders": [],
-          "_protectedParams": [],
-          "_global": false,
-          "_once": false,
-          "_params": {}
-        },
-        {
-          "_name": "design-block",
-          "_styles": {
-            "background-color": "@bgcolor",
-            "& when (@fullWidth = false)": {
-              "padding-top": "(@paddingTop * 15px)",
-              "padding-bottom": "(@paddingBottom * 15px)"
-            },
-            "iframe": {
-              "background-color": "rgb(33, 156, 89)"
-            }
-          },
-          "_customHTML": "<section group=\"Ezenwa\" style=\"padding: {{marginPercentage}}% !important;\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" value=\"0\" step=\"1\" condition=\"fullWidth==false\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" value=\"0\" step=\"1\" condition=\"fullWidth==false\">\n    <!--<input type=\"range\" inline title=\"Width\" name=\"videoSize\" min=\"20\" max=\"100\" value=\"28\" step=\"1\" condition=\"fullWidth==false\">-->\n    <input type=\"text\" title=\"Proportion Width\" name=\"Width\" value=\"1920\">\n        <input type=\"text\" title=\"Iframe height\" name=\"Height\" value=\"1080\">\n        <input type=\"range\" inline title=\"Margin percentage\" name=\"marginPercentage\" min=\"0\" max=\"30\" value=\"5\" step=\"5\">\n        <input type=\"range\" inline title=\"Max Size\" name=\"maxSize\" min=\"0\" max=\"100\" value=\"100\" step=\"5\">\n        <select title=\"Proportion\" name=\"proportion\">\n            <option value=\"embed-responsive-16by9\" selected>16:9</option>\n            <option value=\"embed-responsive-1by1\">1:1</option>\n            <option value=\"embed-responsive-4by3\">4:3</option>\n            <option value=\"embed-responsive-21by9\">21:9</option>\n    </select>\n    <input type=\"text\" title=\"Video URL or filename\" name=\"iframeSrc\" value=\"//ezenwa.org/portafolio/branding/2\">\n    <input type=\"color\" title=\"Background Color\" name=\"bgcolor\" value=\"#12566a\" selected>\n    <input type=\"color\" title=\"Iframe Background Color\" name=\"iframebgcolor\" value=\"#f5c463\" selected>\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n     <!--<div style=\"position: relative; padding-top:calc( {{ Height }} / {{ Width }} * 100%); margin-bottom: {{ marginPercentage}}% !important;\">\n        <iframe src=\"{{ iframeSrc }}\" frameborder=\"0\" allowfullscreen=\"yes\" style=\"position: absolute; top: 0; left: 0; width: 80%; height: 80%; margin: {{ marginPercentage}}% !important;\"></iframe>\n    </div>-->\n    \n    <!--<div style=\"position: relative; padding-top: calc(1080 / 1920 * 100%); margin: 0 auto; height:100%\">\n  <iframe src=\"{{ iframeSrc }}\" frameborder=\"0\" allowfullscreen width=\"{{ maxSize }}%\" height=\"{{ maxSize }}%\" style=\"position: absolute; top:0; left:0; margin: 0 auto;\"></iframe>\n</div>-->\n    \n    \n<!--<div class=\"text-center\" style=\"padding-top:calc( {{ Height }} / {{ Width }} * 100%);\">\n  <iframe src=\"{{ iframeSrc }}\" frameborder=\"0\" allowfullscreen=\"yes\" style=\"position: absolute; left: 0; width: {{ maxSize }}%; height: {{ maxSize }}%; transform: translate(-50%, -0%);\"></iframe>\n</div>-->\n    \n    <div style=\"position: relative; overflow: hidden; padding-top:calc( {{ Height }} / {{ Width }} * 100%);\">\n      <iframe src=\"{{iframeSrc}}\" gesture=\"media\" allow=\"encrypted-media\" allowfullscreen style=\"position: absolute; top: 0; left: 0; width: {{maxSize}}%; height: {{maxSize}}%; border: 0; \"></iframe>\n    </div>\n    \n    \n    \n</section>",
-          "_JSplaceholders": [],
-          "_PHPplaceholders": [],
-          "_anchor": "design-block-b",
-          "_isUserblock": true,
-          "_sourceTheme": "digitalm4",
-          "_cid": "s0b1OJaT2W",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
