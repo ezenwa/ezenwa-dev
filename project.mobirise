@@ -45,7 +45,7 @@
       }
     ],
     "imageResize": true,
-    "uniqCompNum": 7,
+    "uniqCompNum": 8,
     "versionPublish": "4.12.3",
     "screenshot": "screenshot.png",
     "lazyLoad": true,
@@ -777,6 +777,20 @@
           ],
           "_name": "pro.custom-html",
           "_anchor": "custom-html-6",
+          "_PHPplaceholders": [],
+          "_JSplaceholders": []
+        },
+        {
+          "_customTemplate": true,
+          "_afterNavbarItem": false,
+          "_customHTML": "<iframe src=\"https://3dwarehouse.sketchup.com/embed/015f26d2-2ed3-4acb-95da-531a00cd9eb1\" frameborder=\"0\" scrolling=\"no\" marginheight=\"0\" marginwidth=\"0\" width=\"80%\" height=\"326\" allowfullscreen=\"\"></iframe>",
+          "_customCSS": "",
+          "alias": "code-editor",
+          "_tags": [
+            "Extension"
+          ],
+          "_name": "pro.custom-html",
+          "_anchor": "custom-html-7",
           "_PHPplaceholders": [],
           "_JSplaceholders": []
         },
