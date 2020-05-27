@@ -2382,16 +2382,7 @@ a {
   transform: translateY(-50%);
 }
 .cid-1k2qb4vIis {
-  background-color: #cccccc;
+  background-color: #12566a;
   padding-top: 60px;
   padding-bottom: 60px;
-}
-@media (max-width: 768px) {
-  .cid-1k2qb4vIis video {
-    width: 100% !important;
-  }
-}
-.cid-1k2qb4vIis video {
-  margin: auto;
-  display: block;
 }

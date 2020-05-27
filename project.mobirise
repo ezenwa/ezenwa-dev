@@ -828,22 +828,10 @@
             "& when (@fullWidth = false)": {
               "padding-top": "(@paddingTop * 15px)",
               "padding-bottom": "(@paddingBottom * 15px)"
-            },
-            "@media (max-width: 768px)": {
-              "video": {
-                "width": "100% !important"
-              }
-            },
-            "video": {
-              "margin": "auto",
-              "display": "block",
-              "& when (@fullWidth)": {
-                "width": "100% !important"
-              }
             }
           },
           "_name": "design-block",
-          "_customHTML": "<section group=\"Images &amp; Videos\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n    <input type=\"range\" inline=\"\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" value=\"4\" step=\"1\" condition=\"fullWidth==false\">\n    <input type=\"range\" inline=\"\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" value=\"4\" step=\"1\" condition=\"fullWidth==false\">\n    <input type=\"range\" inline=\"\" title=\"Width\" name=\"videoSize\" min=\"20\" max=\"100\" value=\"46\" step=\"1\" condition=\"fullWidth==false\">\n    <input type=\"text\" title=\"Video URL or filename\" name=\"videoSrc\" value=\"//ezenwa.org/portafolio/branding/\">\n    <input type=\"text\" title=\"Poster URL or filename\" name=\"videoPoster\" value=\"\">\n    <input type=\"color\" title=\"Background Color\" name=\"bgcolor\" value=\"#cccccc\" selected=\"\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n     <div style=\"position:relative;padding-top:calc(1080/1920*100%);margin-bottom:10%!important;\">\n        <iframe class=\"iresponsive\" src=\"{{ videoSrc }}\" frameborder=\"0\" allowfullscreen=\"yes\" style=\"position:absolute;top:0;left:0;width:80%;height:80%;margin:10%!important;padding:0 !important\"></iframe>\n    </div>\n    \n    \n</section>\n\n\n\n\n",
+          "_customHTML": "<section group=\"Images & Videos\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" value=\"4\" step=\"1\" condition=\"fullWidth==false\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" value=\"4\" step=\"1\" condition=\"fullWidth==false\">\n    <input type=\"range\" inline title=\"Width\" name=\"videoSize\" min=\"20\" max=\"100\" value=\"46\" step=\"1\" condition=\"fullWidth==false\">\n    <input type=\"text\" title=\"Video URL or filename\" name=\"videoSrc\" value=\"//ezenwa.org/portafolio/branding/\">\n    <input type=\"color\" title=\"Background Color\" name=\"bgcolor\" value=\"#12566a\" selected>\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n     <div style=\"position:relative;padding-top:calc(1080/1920*100%);margin-bottom:10%!important;\">\n        <iframe class=\"iresponsive\" src=\"{{ videoSrc }}\" frameborder=\"0\" allowfullscreen=\"yes\" style=\"position:absolute;top:0;left:0;width:80%;height:80%;margin:10%!important;padding:0 !important\"></iframe>\n    </div>\n    \n    \n</section>",
           "_cid": "1k2qb4vIis",
           "_anchor": "design-block-1k2qb4vIis",
           "_PHPplaceholders": [],
