@@ -1829,6 +1829,40 @@ body {
 a {
   transition: color 0.6s;
 }
+.cid-NEibrs02ql {
+  background-color: #000000;
+}
+.cid-NEibrs02ql video,
+.cid-NEibrs02ql img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+.cid-NEibrs02ql .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #9b59b6;
+  opacity: 0.4;
+}
+.cid-NEibrs02ql .show {
+  visibility: visible;
+}
+.cid-NEibrs02ql .overlay {
+  background: #000000;
+  opacity: 0;
+}
 .cid-rVs6BwK6TX {
   padding-top: 240px;
   padding-bottom: 150px;
