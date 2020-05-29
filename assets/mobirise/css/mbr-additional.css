@@ -1866,11 +1866,9 @@ a {
   background: #000000;
   opacity: 0;
 }
-.cid-xXFy7xWT0O h1,
-.cid-xXFy7xWT0O h2,
-.cid-xXFy7xWT0O h3,
-.cid-xXFy7xWT0O p {
-  max-width: 50vw;
+.cid-xXFy7xWT0O .row {
+  max-width: 90%;
+  padding-left: 10%;
 }
 .cid-rVs6BwK6TX {
   padding-top: 240px;
