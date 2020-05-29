@@ -1864,9 +1864,8 @@ a {
 .cid-NEibrs02ql .show {
   visibility: visible;
 }
-.cid-NEibrs02ql .overlay {
-  background: #000000;
-  opacity: 0;
+.cid-NEibrs02ql video {
+  visibility: hidden;
 }
 .cid-rVs6BwK6TX {
   padding-top: 240px;
