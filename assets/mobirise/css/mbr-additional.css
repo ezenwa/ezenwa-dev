@@ -1831,6 +1831,11 @@ a {
 }
 .cid-NEibrs02ql {
   background-color: #000000;
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+.cid-NEibrs02ql #goDown {
+  visibility: hidden;
 }
 .cid-NEibrs02ql video,
 .cid-NEibrs02ql img {
