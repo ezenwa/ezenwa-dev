@@ -1862,6 +1862,16 @@ a {
 .cid-xXFy7xWT0O .hide {
   visibility: hidden;
 }
+.cid-xXFy7xWT0O .overlay {
+  background: #000000;
+  opacity: 0;
+}
+.cid-xXFy7xWT0O h1,
+.cid-xXFy7xWT0O h2,
+.cid-xXFy7xWT0O h3,
+.cid-xXFy7xWT0O p {
+  max-width: 50vw;
+}
 .cid-rVs6BwK6TX {
   padding-top: 240px;
   padding-bottom: 150px;
