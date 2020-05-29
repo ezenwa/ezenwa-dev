@@ -85,56 +85,55 @@
         {
           "alias": false,
           "_styles": {
-            "background-color": "@bgColor;",
+            "background-color": "@bgColor",
             "& when not (@fullScreen)": {
-              "padding-top": "(@paddingTop * 15px);",
-              "padding-bottom": "(@paddingBottom * 15px);",
+              "padding-top": "(@paddingTop * 15px)",
+              "padding-bottom": "(@paddingBottom * 15px)",
               "#goDown": {
-                "visibility": "hidden;"
+                "visibility": "hidden"
               }
             },
             "video, img": {
-              "position": "absolute;",
-              "top": "50%;",
-              "left": "50%;",
-              "min-width": "100%;",
-              "min-height": "100%;",
-              "width": "auto;",
-              "height": "auto;",
-              "z-index": "0;",
-              "-ms-transform": "translateX(-50%) translateY(-50%);",
-              "-moz-transform": "translateX(-50%) translateY(-50%);",
-              "-webkit-transform": "translateX(-50%) translateY(-50%);",
-              "transform": "translateX(-50%) translateY(-50%);"
+              "position": "absolute",
+              "top": "50%",
+              "left": "50%",
+              "min-width": "100%",
+              "min-height": "100%",
+              "width": "auto",
+              "height": "auto",
+              "z-index": "0",
+              "-ms-transform": "translateX(-50%) translateY(-50%)",
+              "-moz-transform": "translateX(-50%) translateY(-50%)",
+              "-webkit-transform": "translateX(-50%) translateY(-50%)",
+              "transform": "translateX(-50%) translateY(-50%)"
             },
             ".overlay": {
-              "position": "absolute;",
-              "top": "0;",
-              "left": "0;",
-              "width": "100%;",
-              "height": "100%;",
-              "background": "@overlayColor;",
-              "opacity": "@overlayOpacity;"
+              "position": "absolute",
+              "top": "0",
+              "left": "0",
+              "width": "100%",
+              "height": "100%",
+              "background": "@overlayColor",
+              "opacity": "@overlayOpacity"
             },
             ".show": {
-              "visibility": "visible;"
+              "visibility": "visible"
             },
             ".hide": {
-              "visibility": "hidden;"
+              "visibility": "hidden"
             },
             "& when not (@preview)": {
               "video": {
-                "visibility": "hidden;"
+                "visibility": "hidden"
               }
             },
             "& when not (@overlay)": {
               ".overlay": {
-                "background": "(@overlayColor * 0);",
-                "opacity": "(@overlayOpacity * 0);"
+                "background": "(@overlayColor * 0)",
+                "opacity": "(@overlayOpacity * 0)"
               },
-              ".row": {
-                "padding-left": "5%;",
-                "padding-right": "5%;"
+              "p": {
+                "max-width": "90%"
               }
             }
           },
@@ -145,7 +144,9 @@
           "_protectedParams": [],
           "_global": false,
           "_once": false,
-          "_params": {}
+          "_params": {},
+          "_PHPplaceholders": [],
+          "_JSplaceholders": []
         },
         {
           "alias": false,
