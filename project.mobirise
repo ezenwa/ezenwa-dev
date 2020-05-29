@@ -133,8 +133,8 @@
                 "opacity": "(@overlayOpacity * 0)"
               }
             },
-            "h1, h2, h3, p": {
-              "max-width": "90vw"
+            "row": {
+              "max-width": "80%"
             }
           },
           "_name": "design-block",

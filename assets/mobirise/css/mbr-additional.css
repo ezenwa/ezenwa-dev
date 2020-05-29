@@ -1866,11 +1866,8 @@ a {
   background: #000000;
   opacity: 0;
 }
-.cid-7pa7wtHqt5 h1,
-.cid-7pa7wtHqt5 h2,
-.cid-7pa7wtHqt5 h3,
-.cid-7pa7wtHqt5 p {
-  max-width: 90vw;
+.cid-7pa7wtHqt5 row {
+  max-width: 80%;
 }
 .cid-rVs6BwK6TX {
   padding-top: 240px;
