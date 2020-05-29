@@ -1844,11 +1844,17 @@ a {
   font-size: 14px;
   line-height: 1;
 }
-.cid-Z3Mx6NiZDS {
+.cid-3OXN1pHdc4 {
   background-color: #242930;
 }
-.cid-Z3Mx6NiZDS iframe {
-  background-color: #242930;
+.cid-3OXN1pHdc4 .show {
+  visibility: visible;
+}
+.cid-3OXN1pHdc4 iframe {
+  visibility: hidden;
+}
+.cid-3OXN1pHdc4 .hide {
+  visibility: hidden;
 }
 .cid-rVs6AFAdxl .dropdown-menu {
   padding: 12px 0;
