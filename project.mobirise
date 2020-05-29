@@ -132,8 +132,9 @@
                 "background": "(@overlayColor * 0)",
                 "opacity": "(@overlayOpacity * 0)"
               },
-              "p": {
-                "max-width": "90%"
+              ".row": {
+                "padding-left": "5% !important",
+                "padding-right": "5% !important"
               }
             }
           },
