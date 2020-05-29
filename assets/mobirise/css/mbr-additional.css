@@ -1862,6 +1862,9 @@ a {
 .cid-fn9DCA7trl .hide {
   visibility: hidden;
 }
+.cid-fn9DCA7trl video {
+  visibility: hidden;
+}
 .cid-fn9DCA7trl .overlay {
   background: #000000;
   opacity: 0;
