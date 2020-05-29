@@ -135,7 +135,7 @@
             },
             ".row": {
               "max-width": "95%",
-              "padding-left": "5%"
+              "padding-left": "9.5%"
             }
           },
           "_name": "design-block",
