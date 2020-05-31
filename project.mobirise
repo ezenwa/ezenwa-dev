@@ -762,7 +762,7 @@
               "display": "none"
             },
             "& when (@preview)": {
-              ".wrap": {
+              ".wrap, copyright": {
                 "position": "absolute",
                 "visibility": "hidden",
                 "z-index": "2",
@@ -799,7 +799,7 @@
             },
             "& when not (@preview)": {
               ".wrap, .copyright": {
-                "position": "absolute"
+                "position": "fixed"
               }
             },
             ".mbr-section-subtitle": {
