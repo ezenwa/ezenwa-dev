@@ -46,7 +46,7 @@
       }
     ],
     "imageResize": true,
-    "uniqCompNum": 12,
+    "uniqCompNum": 13,
     "versionPublish": "4.12.3",
     "screenshot": "screenshot.png",
     "lazyLoad": false,
@@ -703,7 +703,7 @@
           "_params": {}
         },
         {
-          "alias": false,
+          "_name": "design-block",
           "_styles": {
             "section": {
               "z-index": "99"
@@ -719,7 +719,7 @@
               "align-items": "center",
               "width": "100%",
               "padding-right": "20px",
-              "bottom": "150px",
+              "bottom": "0",
               "background-color": "@barColorSelect",
               "z-index": "2",
               "visibility": "visible"
@@ -728,10 +728,8 @@
               "position": "fixed",
               "display": "flex",
               "flex-wrap": "wrap",
-              "justify-content": "center",
-              "align-items": "center",
-              "z-index": "1",
-              "visibility": "visible",
+              "width": "100%",
+              "margin-left": "20px",
               "padding-left": "20px"
             },
             "@media (min-width: 768px)": {
@@ -765,6 +763,7 @@
             },
             "& when (@preview)": {
               ".wrap": {
+                "position": "absolute",
                 "visibility": "hidden",
                 "z-index": "2",
                 "display": "flex !important"
@@ -774,6 +773,7 @@
               }
             },
             ".show": {
+              "position": "fixed",
               "visibility": "visible !important",
               "bottom": "0"
             },
@@ -797,16 +797,22 @@
                 }
               }
             },
+            "& when not (@preview)": {
+              ".wrap, .copyright": {
+                "position": "absolute"
+              }
+            },
             ".mbr-section-subtitle": {
               "color": "#ffffff"
             }
           },
-          "_name": "design-block",
-          "_customHTML": "<section group=\"Footers\">\n\n<mbr-parameters>\n<input type=\"checkbox\" title=\"Hide in editor\" name=\"preview\">\n<input type=\"range\" inline title=\"Buttons\" name=\"items\" min=\"1\" max=\"5\" value=\"5\" step=\"1\">\n<input type=\"color\" title=\"Bg Button 1\" name=\"bgColor5\" value=\"#25d366\" condition=\"items > 0\">\n<input type=\"color\" title=\"Bg Button 2\" name=\"bgColor4\" value=\"#0084ff\" condition=\"items > 1\">\n<input type=\"color\" title=\"Bg Button 3\" name=\"bgColor3\" value=\"#3b5999\" condition=\"items > 2\">\n<input type=\"color\" title=\"Bg Button 4\" name=\"bgColor2\" value=\"#d93175\" condition=\"items > 3\">\n<input type=\"color\" title=\"Bg Button 5\" name=\"bgColor1\" value=\"#55acee\" condition=\"items > 4\">\n<input type=\"checkbox\" title=\"Bar Color\" name=\"barColor\" checked>\n<input type=\"color\" title=\"Select\" name=\"barColorSelect\" value=\"#9b59b6\" condition=\"barColor == true\">\n<input type=\"checkbox\" title=\"Transparent in mobile\" name=\"transparent\" condition=\"barColor == true\">\n<input type=\"checkbox\" title=\"Show Copyright\" name=\"copyright\" condition=\"barColor == true\" checked>\n</mbr-parameters>\n\n<div mbr-class=\"{'hidden': isPublish}\" style=\"padding:4rem; color: #ffffff; background-color:#000000;\">Footer Bar 🡅 You can hide in editor ⚙ to avoid overlap</div>\n\n<div mbr-class=\"{'show': isPublish}\" class=\"wrap\">\n\n<h3 data-app-selector=\".mbr-section-subtitle\" class=\"mbr-section-subtitle align-center mbr-light mbr-fonts-style copyright\" mbr-theme-style=\"display-7\">Coded with ❤ by <a href=\"https://ezenwa.dev\" target=\"_blank\">Joshua Ezenwa</a> ©2020 </h3>\n\n<a mbr-icon class=\"item mbr-iconfont socicon-twitter socicon\" target=\"_blank\" style=\"color: rgb(255, 255, 255); fill: rgb(255, 255, 255); background-color:{{bgColor1}}\" href=\"#\" mbr-if=\"items > 4\"></a>\n\n<a mbr-icon class=\"item mbr-iconfont socicon-instagram socicon\" target=\"_blank\" style=\"color: rgb(255, 255, 255); fill: rgb(255, 255, 255); background-color:{{bgColor2}}\" href=\"#\" mbr-if=\"items > 3\"></a>\n\n<a mbr-icon class=\"item mbr-iconfont socicon-facebook socicon\" target=\"_blank\" style=\"color: rgb(255, 255, 255); fill: rgb(255, 255, 255); background-color:{{bgColor3}}\" href=\"#\" mbr-if=\"items > 2\"></a>\n\n<a mbr-icon class=\"item mbr-iconfont socicon-messenger socicon\" target=\"_blank\" style=\"color: rgb(255, 255, 255); fill: rgb(255, 255, 255); background-color:{{bgColor4}}\" href=\"#\" mbr-if=\"items > 1\"></a>\n\n<a mbr-icon class=\"item mbr-iconfont socicon-whatsapp socicon\" target=\"_blank\" style=\"color: rgb(255, 255, 255); fill: rgb(255, 255, 255); background-color:{{bgColor5}}\" href=\"#\" mbr-if=\"items > 0\"></a>\n\n</div>\n\n</section>",
-          "_cid": "gVg7MwSYLE",
-          "_anchor": "design-block-gVg7MwSYLE",
-          "_PHPplaceholders": [],
+          "_customHTML": "<section group=\"Footers\">\n\n<mbr-parameters>\n<input type=\"checkbox\" title=\"Hide in editor\" name=\"preview\">\n<input type=\"range\" inline title=\"Buttons\" name=\"items\" min=\"1\" max=\"5\" value=\"5\" step=\"1\">\n<input type=\"color\" title=\"Bg Button 1\" name=\"bgColor5\" value=\"#25d366\" condition=\"items > 0\">\n<input type=\"color\" title=\"Bg Button 2\" name=\"bgColor4\" value=\"#0084ff\" condition=\"items > 1\">\n<input type=\"color\" title=\"Bg Button 3\" name=\"bgColor3\" value=\"#3b5999\" condition=\"items > 2\">\n<input type=\"color\" title=\"Bg Button 4\" name=\"bgColor2\" value=\"#d93175\" condition=\"items > 3\">\n<input type=\"color\" title=\"Bg Button 5\" name=\"bgColor1\" value=\"#55acee\" condition=\"items > 4\">\n<input type=\"checkbox\" title=\"Bar Color\" name=\"barColor\" checked>\n<input type=\"color\" title=\"Select\" name=\"barColorSelect\" value=\"#1a032d\" condition=\"barColor == true\">\n<input type=\"checkbox\" title=\"Transparent in mobile\" name=\"transparent\" condition=\"barColor == true\">\n<input type=\"checkbox\" title=\"Show Copyright\" name=\"copyright\" condition=\"barColor == true\" checked>\n</mbr-parameters>\n\n<div mbr-class=\"{'hidden': isPublish}\" style=\"padding:6rem; color: #ffffff; background-color:#000000;\">Footer Bar 🡇 You can hide in editor \"⚙\" to avoid overlap</div>\n    \n    \n\n        \n    \n\n<div mbr-class=\"{'show': isPublish}\" class=\"wrap\">\n    \n    <h3 data-app-selector=\".mbr-section-subtitle\" class=\"mbr-section-subtitle align-center mbr-light mbr-fonts-style copyright\" mbr-theme-style=\"display-7\">Coded with ❤ by &nbsp;<a href=\"https://ezenwa.dev\" target=\"_blank\">Joshua Ezenwa</a> ©2020 </h3>\n\n\n<a mbr-icon class=\"item mbr-iconfont socicon-twitter socicon\" target=\"_blank\" style=\"color: rgb(255, 255, 255); fill: rgb(255, 255, 255); background-color:{{bgColor1}}\" href=\"#\" mbr-if=\"items > 4\"></a>\n\n<a mbr-icon class=\"item mbr-iconfont socicon-instagram socicon\" target=\"_blank\" style=\"color: rgb(255, 255, 255); fill: rgb(255, 255, 255); background-color:{{bgColor2}}\" href=\"#\" mbr-if=\"items > 3\"></a>\n\n<a mbr-icon class=\"item mbr-iconfont socicon-facebook socicon\" target=\"_blank\" style=\"color: rgb(255, 255, 255); fill: rgb(255, 255, 255); background-color:{{bgColor3}}\" href=\"#\" mbr-if=\"items > 2\"></a>\n\n<a mbr-icon class=\"item mbr-iconfont socicon-messenger socicon\" target=\"_blank\" style=\"color: rgb(255, 255, 255); fill: rgb(255, 255, 255); background-color:{{bgColor4}}\" href=\"#\" mbr-if=\"items > 1\"></a>\n\n<a mbr-icon class=\"item mbr-iconfont socicon-whatsapp socicon\" target=\"_blank\" style=\"color: rgb(255, 255, 255); fill: rgb(255, 255, 255); background-color:{{bgColor5}}\" href=\"#\" mbr-if=\"items > 0\"></a>\n\n</div>\n\n</section>",
           "_JSplaceholders": [],
+          "_PHPplaceholders": [],
+          "_anchor": "design-block-c",
+          "_isUserblock": true,
+          "_sourceTheme": "digitalm4",
+          "_cid": "s0ytRa4uxe",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
