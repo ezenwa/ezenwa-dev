@@ -2331,7 +2331,7 @@ a {
   padding-right: 20px;
   bottom: 150px;
   background-color: #9b59b6;
-  z-index: 9999999999999999 !important;
+  z-index: 2;
   visibility: visible;
 }
 .cid-gVg7MwSYLE .copyright {
