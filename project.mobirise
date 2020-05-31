@@ -726,6 +726,7 @@
             },
             ".copyright": {
               "position": "fixed",
+              "display": "flex",
               "z-index": "1",
               "visibility": "visible",
               "margin-left": "10px",
