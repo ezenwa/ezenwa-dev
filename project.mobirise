@@ -775,8 +775,7 @@
               "display": "flex !important",
               "position": "fixed !important",
               "visibility": "visible !important",
-              "align-items": "center !important",
-              "bottom": "0"
+              "align-items": "center !important"
             },
             "& when not (@barColor)": {
               ".wrap": {
