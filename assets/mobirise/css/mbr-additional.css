@@ -2335,9 +2335,7 @@ a {
   visibility: visible;
 }
 .cid-s0ytRa4uxe h3 {
-  padding: 20px;
   background-color: #000;
-  margin-bottom: 20px;
 }
 .cid-s0ytRa4uxe .copyright {
   position: fixed;
@@ -2346,7 +2344,7 @@ a {
   align-items: center;
   width: 100%;
   margin-left: 20px;
-  padding-left: 20px;
+  padding-left: 0px;
 }
 @media (min-width: 768px) {
   .cid-s0ytRa4uxe .wrap {
