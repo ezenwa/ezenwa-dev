@@ -2363,6 +2363,11 @@ a {
   visibility: visible !important;
   align-items: center !important;
 }
+@media (max-width: 768px) {
+  .cid-s0ytRa4uxe .wrap {
+    background-color: transparent !important;
+  }
+}
 .cid-s0ytRa4uxe .wrap,
 .cid-s0ytRa4uxe .copyright {
   position: absolute;
