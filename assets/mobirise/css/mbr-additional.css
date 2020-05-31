@@ -2293,24 +2293,6 @@ a {
     left: -1rem;
   }
 }
-.cid-rVs6HuYwmv {
-  padding-top: 90px;
-  padding-bottom: 90px;
-  background-color: #1e2228;
-}
-@media (min-width: 1500px) {
-  .cid-rVs6HuYwmv .container {
-    max-width: 1400px;
-  }
-}
-@media (max-width: 767px) {
-  .cid-rVs6HuYwmv .copyright {
-    margin-bottom: 1rem;
-  }
-}
-.cid-rVs6HuYwmv p {
-  color: #ffffff;
-}
 .cid-s0ytRa4uxe section {
   z-index: 99;
 }
@@ -2330,7 +2312,7 @@ a {
   width: 100%;
   padding-right: 20px;
   bottom: 0;
-  background-color: #242930;
+  background-color: #1e2228;
   z-index: 2;
   visibility: visible;
 }
