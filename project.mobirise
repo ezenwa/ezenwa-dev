@@ -726,7 +726,8 @@
             },
             "h3": {
               "padding": "20px",
-              "background-color": "#000"
+              "background-color": "#000",
+              "margin-bottom": "20px"
             },
             ".copyright": {
               "position": "fixed",
