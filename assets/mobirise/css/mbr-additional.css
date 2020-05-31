@@ -2337,6 +2337,8 @@ a {
 .cid-gVg7MwSYLE .copyright {
   position: fixed;
   display: flex;
+  justify-content: center;
+  align-items: center;
   z-index: 1;
   visibility: visible;
   margin-left: 10px;
