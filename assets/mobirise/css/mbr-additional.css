@@ -2338,6 +2338,7 @@ a {
   position: fixed;
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   width: 100%;
   margin-left: 20px;
   padding-left: 20px;
@@ -2378,7 +2379,7 @@ a {
 }
 .cid-s0ytRa4uxe .wrap,
 .cid-s0ytRa4uxe .copyright {
-  position: fixed;
+  position: absolute;
 }
 .cid-s0ytRa4uxe .mbr-section-subtitle {
   color: #ffffff;
