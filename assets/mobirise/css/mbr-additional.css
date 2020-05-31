@@ -2330,7 +2330,7 @@ a {
   width: 100%;
   padding-right: 20px;
   bottom: 0;
-  background-color: #12566a;
+  background-color: #d75959;
   z-index: 2;
   visibility: visible;
 }
@@ -2373,8 +2373,10 @@ a {
   display: none;
 }
 .cid-s0ytRa4uxe .show {
+  display: flex !important;
   position: fixed !important;
   visibility: visible !important;
+  align-items: center !important;
   bottom: 0;
 }
 .cid-s0ytRa4uxe .wrap,
