@@ -201,7 +201,7 @@
             }
           },
           "_name": "design-block",
-          "_customHTML": "<section group=\"HTML\" style=\"padding:{{ padding }}%;\">\n\n<mbr-parameters>\n<input type=\"text\" title=\"Iframe Width\" name=\"width\" value=\"1920\">\n<input type=\"text\" title=\"Iframe Height\" name=\"height\" value=\"1080\">\n<input type=\"text\" title=\"URL\" name=\"iframeSrc\" value=\"https://ezenwa.org/portafolio/branding/\">\n<input type=\"checkbox\" title=\"Preview Iframe Content\" name=\"preview\" checked>\n<input type=\"range\" inline title=\"Padding %\" name=\"padding\" min=\"0\" max=\"15\" value=\"7\" step=\"1\">\n<input type=\"color\" title=\"Background Color\" name=\"bgcolor\" value=\"#242930\" selected>\n</mbr-parameters>\n\n<div style=\"position: relative; overflow: hidden; padding-top:calc( {{height}} / {{width}} * 100%);\">\n<img mbr-class=\"{'hide': isPublish}\" src=\"https://res.cloudinary.com/ezenwa/image/upload/v1590745237/test-bars_yednyc.svg\" style=\"position:absolute; top:0; left:0; width:100%; height:100%; border:0;\">\n<iframe mbr-class=\"{'show': isPublish}\" allowfullscreen=\"yes\" style=\"position:absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;\" src=\"{{iframeSrc}}\"></iframe>\n</div>\n\n</section>",
+          "_customHTML": "<section group=\"HTML\" style=\"padding:{{ padding }}%;\">\n\n<mbr-parameters>\n<input type=\"text\" title=\"Iframe Width\" name=\"width\" value=\"1920\">\n<input type=\"text\" title=\"Iframe Height\" name=\"height\" value=\"1080\">\n<input type=\"text\" title=\"URL\" name=\"iframeSrc\" value=\"https://ezenwa.org/portafolio/branding/\">\n<input type=\"checkbox\" title=\"Preview Iframe Content\" name=\"preview\">\n<input type=\"range\" inline title=\"Padding %\" name=\"padding\" min=\"0\" max=\"15\" value=\"7\" step=\"1\">\n<input type=\"color\" title=\"Background Color\" name=\"bgcolor\" value=\"#242930\" selected>\n</mbr-parameters>\n\n<div style=\"position: relative; overflow: hidden; padding-top:calc( {{height}} / {{width}} * 100%);\">\n<img mbr-class=\"{'hide': isPublish}\" src=\"https://res.cloudinary.com/ezenwa/image/upload/v1590745237/test-bars_yednyc.svg\" style=\"position:absolute; top:0; left:0; width:100%; height:100%; border:0;\">\n<iframe mbr-class=\"{'show': isPublish}\" allowfullscreen=\"yes\" style=\"position:absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;\" src=\"{{iframeSrc}}\"></iframe>\n</div>\n\n</section>",
           "_cid": "nWYh0btBQf",
           "_anchor": "design-block-nWYh0btBQf",
           "_protectedParams": [],
@@ -705,43 +705,104 @@
         {
           "alias": false,
           "_styles": {
+            "section": {
+              "z-index": "99"
+            },
+            "input, textarea, button, select, a": {
+              "-webkit-tap-highlight-color": "rgba(0, 0, 0, 0)"
+            },
+            ".wrap": {
+              "position": "fixed",
+              "display": "flex",
+              "flex-wrap": "wrap",
+              "justify-content": "center",
+              "align-items": "center",
+              "width": "100%",
+              "padding-right": "20px",
+              "bottom": "150px",
+              "background-color": "@barColorSelect",
+              "z-index": "9999999999999999 !important",
+              "visibility": "visible"
+            },
+            ".copyright": {
+              "position": "fixed",
+              "z-index": "1",
+              "visibility": "visible",
+              "margin-left": "10px",
+              "left": "0",
+              "padding-left": "20px"
+            },
+            "@media (min-width: 768px)": {
+              ".wrap": {
+                "justify-content": "flex-end"
+              }
+            },
+            "@media (max-width: 768px)": {
+              ".wrap": {
+                "justify-content": "space-around",
+                "padding-right": "0px"
+              },
+              ".copyright": {
+                "visibility": "hidden"
+              }
+            },
+            ".item": {
+              "border-radius": "50%",
+              "font-size": "30px",
+              "font-height": "100%",
+              "text-align": "center",
+              "vertical-align": "middle",
+              "padding": "10px",
+              "margin-top": "10px",
+              "margin-left": "5px",
+              "margin-right": "5px",
+              "margin-bottom": "10px"
+            },
             ".hidden": {
               "display": "none"
             },
-            ".floating-bar": {
-              "position": "fixed",
-              "width": "60px",
-              "height": "60px",
-              "bottom": "20px",
-              "right": "20px",
-              "background-color": "@bgcolor",
-              "color": "@iconcolor",
-              "border-radius": "unit(@borderRadius, ~'%')",
-              "text-align": "center",
-              "& when (@shadow)": {
-                "box-shadow": "2px 2px 2px #242930"
+            "& when (@preview)": {
+              ".wrap": {
+                "visibility": "hidden",
+                "z-index": "999999999999",
+                "display": "flex !important"
               },
-              "& when (@transition)": {
-                "transition": "0.3s"
+              ".copyright": {
+                "visibility": "hidden"
+              }
+            },
+            ".show": {
+              "visibility": "visible !important",
+              "bottom": "0"
+            },
+            "& when not (@barColor)": {
+              ".wrap": {
+                "background-color": "transparent !important"
               },
-              "z-index": "1"
+              ".mbr-section-subtitle": {
+                "visibility": "hidden"
+              }
             },
-            ".floating-bar:hover": {
-              "background-color": "@hovercolor"
+            "& when not (@copyright)": {
+              ".mbr-section-subtitle": {
+                "visibility": "hidden"
+              }
             },
-            ".floating-button": {
-              "color": "@iconcolor"
+            "& when (@transparent)": {
+              "@media (max-width: 768px)": {
+                ".wrap": {
+                  "background-color": "transparent !important"
+                }
+              }
             },
-            ".valign": {
-              "position": "relative",
-              "top": "50%",
-              "transform": "translateY(-50%)"
+            ".mbr-section-subtitle": {
+              "color": "#ffffff"
             }
           },
           "_name": "design-block",
-          "_customHTML": "<section class=\"header1\" group=\"Headers\">\n    <mbr-parameters>\n       <!-- Block parameters controls (Blue \"Gear\" panel) -->\n       <input type=\"color\" title=\"Icon Color\" name=\"iconcolor\" value=\"#ffffff\">\n       <input type=\"color\" title=\"Background Color\" name=\"bgcolor\" value=\"#00bfa5\">\n       <input type=\"color\" title=\"Hover Color\" name=\"hovercolor\" value=\"#00bfa5\">\n       <input type=\"range\" inline title=\"Border Radius\" name=\"borderRadius\" min=\"0\" max=\"50\" step=\"10\" value=\"50\">\n       <input type=\"checkbox\" title=\"Shadow\" name=\"shadow\" checked>\n       <input type=\"checkbox\" title=\"Transition\" name=\"transition\" checked>\n       <!-- End block parameters -->\n    </mbr-parameters>\n\n    <a href=\"https://wa.me/5212226585270\" class=\"floating-bar\" target=\"_blank\">\n        <div class=\"valign\">\n            <span mbr-icon class=\"mbr-iconfont mbr-iconfont-btn floating-button fa-whatsapp fa\" style=\"font-size: 32px;\"></span>\n        </div>        \n    </a>\n \n    <div mbr-class=\"{'hidden': isPublish}\" style=\"padding:0rem\">Botón WhatsApp</div>\n\n</section>",
-          "_cid": "i0YkGJuvti",
-          "_anchor": "design-block-i0YkGJuvti",
+          "_customHTML": "<section group=\"Footers\">\n\n<mbr-parameters>\n<input type=\"checkbox\" title=\"Hide in editor\" name=\"preview\">\n<input type=\"range\" inline title=\"Buttons\" name=\"items\" min=\"1\" max=\"5\" value=\"5\" step=\"1\">\n<input type=\"color\" title=\"Bg Button 1\" name=\"bgColor5\" value=\"#25d366\" condition=\"items > 0\">\n<input type=\"color\" title=\"Bg Button 2\" name=\"bgColor4\" value=\"#0084ff\" condition=\"items > 1\">\n<input type=\"color\" title=\"Bg Button 3\" name=\"bgColor3\" value=\"#3b5999\" condition=\"items > 2\">\n<input type=\"color\" title=\"Bg Button 4\" name=\"bgColor2\" value=\"#d93175\" condition=\"items > 3\">\n<input type=\"color\" title=\"Bg Button 5\" name=\"bgColor1\" value=\"#55acee\" condition=\"items > 4\">\n<input type=\"checkbox\" title=\"Bar Color\" name=\"barColor\" checked>\n<input type=\"color\" title=\"Select\" name=\"barColorSelect\" value=\"#9b59b6\" condition=\"barColor == true\">\n<input type=\"checkbox\" title=\"Transparent in mobile\" name=\"transparent\" condition=\"barColor == true\">\n<input type=\"checkbox\" title=\"Show Copyright\" name=\"copyright\" condition=\"barColor == true\" checked>\n</mbr-parameters>\n\n<div mbr-class=\"{'hidden': isPublish}\" style=\"padding:4rem; color: #ffffff; background-color:#000000;\">Footer Bar 🡅 You can hide in editor ⚙ to avoid overlap</div>\n\n<div mbr-class=\"{'show': isPublish}\" class=\"wrap\">\n\n<h3 data-app-selector=\".mbr-section-subtitle\" class=\"mbr-section-subtitle align-center mbr-light mbr-fonts-style copyright\" mbr-theme-style=\"display-7\">Coded with ❤ by <a href=\"https://ezenwa.dev\" target=\"_blank\">Joshua Ezenwa</a> ©2020 </h3>\n\n<a mbr-icon class=\"item mbr-iconfont socicon-twitter socicon\" target=\"_blank\" style=\"color: rgb(255, 255, 255); fill: rgb(255, 255, 255); background-color:{{bgColor1}}\" href=\"#\" mbr-if=\"items > 4\"></a>\n\n<a mbr-icon class=\"item mbr-iconfont socicon-instagram socicon\" target=\"_blank\" style=\"color: rgb(255, 255, 255); fill: rgb(255, 255, 255); background-color:{{bgColor2}}\" href=\"#\" mbr-if=\"items > 3\"></a>\n\n<a mbr-icon class=\"item mbr-iconfont socicon-facebook socicon\" target=\"_blank\" style=\"color: rgb(255, 255, 255); fill: rgb(255, 255, 255); background-color:{{bgColor3}}\" href=\"#\" mbr-if=\"items > 2\"></a>\n\n<a mbr-icon class=\"item mbr-iconfont socicon-messenger socicon\" target=\"_blank\" style=\"color: rgb(255, 255, 255); fill: rgb(255, 255, 255); background-color:{{bgColor4}}\" href=\"#\" mbr-if=\"items > 1\"></a>\n\n<a mbr-icon class=\"item mbr-iconfont socicon-whatsapp socicon\" target=\"_blank\" style=\"color: rgb(255, 255, 255); fill: rgb(255, 255, 255); background-color:{{bgColor5}}\" href=\"#\" mbr-if=\"items > 0\"></a>\n\n</div>\n\n</section>",
+          "_cid": "gVg7MwSYLE",
+          "_anchor": "design-block-gVg7MwSYLE",
           "_PHPplaceholders": [],
           "_JSplaceholders": [],
           "_protectedParams": [],

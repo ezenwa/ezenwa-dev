@@ -1894,6 +1894,9 @@ a {
 .cid-nWYh0btBQf .show {
   visibility: visible;
 }
+.cid-nWYh0btBQf iframe {
+  visibility: hidden;
+}
 .cid-nWYh0btBQf .hide {
   visibility: hidden;
 }
@@ -2308,31 +2311,70 @@ a {
 .cid-rVs6HuYwmv p {
   color: #ffffff;
 }
-.cid-i0YkGJuvti .hidden {
+.cid-gVg7MwSYLE section {
+  z-index: 99;
+}
+.cid-gVg7MwSYLE input,
+.cid-gVg7MwSYLE textarea,
+.cid-gVg7MwSYLE button,
+.cid-gVg7MwSYLE select,
+.cid-gVg7MwSYLE a {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.cid-gVg7MwSYLE .wrap {
+  position: fixed;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-right: 20px;
+  bottom: 150px;
+  background-color: #9b59b6;
+  z-index: 9999999999999999 !important;
+  visibility: visible;
+}
+.cid-gVg7MwSYLE .copyright {
+  position: fixed;
+  z-index: 1;
+  visibility: visible;
+  margin-left: 10px;
+  left: 0;
+  padding-left: 20px;
+}
+@media (min-width: 768px) {
+  .cid-gVg7MwSYLE .wrap {
+    justify-content: flex-end;
+  }
+}
+@media (max-width: 768px) {
+  .cid-gVg7MwSYLE .wrap {
+    justify-content: space-around;
+    padding-right: 0px;
+  }
+  .cid-gVg7MwSYLE .copyright {
+    visibility: hidden;
+  }
+}
+.cid-gVg7MwSYLE .item {
+  border-radius: 50%;
+  font-size: 30px;
+  font-height: 100%;
+  text-align: center;
+  vertical-align: middle;
+  padding: 10px;
+  margin-top: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 10px;
+}
+.cid-gVg7MwSYLE .hidden {
   display: none;
 }
-.cid-i0YkGJuvti .floating-bar {
-  position: fixed;
-  width: 60px;
-  height: 60px;
-  bottom: 20px;
-  right: 20px;
-  background-color: #00bfa5;
+.cid-gVg7MwSYLE .show {
+  visibility: visible !important;
+  bottom: 0;
+}
+.cid-gVg7MwSYLE .mbr-section-subtitle {
   color: #ffffff;
-  border-radius: 50%;
-  text-align: center;
-  box-shadow: 2px 2px 2px #242930;
-  transition: 0.3s;
-  z-index: 1;
-}
-.cid-i0YkGJuvti .floating-bar:hover {
-  background-color: #00bfa5;
-}
-.cid-i0YkGJuvti .floating-button {
-  color: #ffffff;
-}
-.cid-i0YkGJuvti .valign {
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
 }
